@@ -6,38 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ReservaResumenReserva">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:elevation="0dp"
-        app:backgroundTint="#FFFFFF"
-        app:borderWidth="0dp"
-        app:elevation="0dp"
-        app:hoveredFocusedTranslationZ="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:pressedTranslationZ="6dp"
-        app:rippleColor="#00FFFFFF"
-        app:srcCompat="?attr/homeAsUpIndicator"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <TextView
         android:id="@+id/txtTituloReservaTicket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RESUMEN DE RESERVA"
+        android:text="MOSTRAR TICKET"
         android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.118" />
@@ -254,12 +233,24 @@
         app:layout_constraintVertical_bias="0.669"
         app:srcCompat="@mipmap/jugo" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        app:srcCompat="@mipmap/codigo" />
+
     <Button
         android:id="@+id/btn_reservar_RR"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#136CF1"
-        android:text="RESERVAR"
+        android:text="IR A INICIO"
         android:textSize="14sp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -267,6 +258,6 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.932" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
