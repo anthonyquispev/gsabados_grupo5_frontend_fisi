@@ -13,14 +13,22 @@
         android:theme="@style/Theme.DIGITICKET_APP_01"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ReservaEscogerTurno"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ModalReservaConfirmada"
             android:exported="true"
-            android:theme="@style/Theme.DIGITICKET_APP_01.Modal">
-        </activity>
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal"></activity>
         <activity
             android:name=".ModalConfirmacion"
             android:exported="true"
-            android:theme="@style/Theme.DIGITICKET_APP_01.Modal"></activity>
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".ReservaMostrarTicket"
             android:exported="true">
@@ -41,15 +49,6 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ReservaTurno"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
