@@ -46,23 +46,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="154dp"
-        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/txtBienvenido"
-            android:layout_width="270dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="85dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="85dp"
-            android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif-light"
             android:text='"BIENVENIDO ESTAMOS EN HORARIO DE RESERVA DE ALMUERZO"'
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="15sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -74,11 +71,10 @@
                 android:id="@+id/txtAlmuerzoDia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="75dp"
+                android:layout_marginLeft="85dp"
                 android:layout_marginTop="8dp"
                 android:text="Almuerzo del día:"
                 android:textColor="#3B4CDE"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -89,7 +85,6 @@
                 android:layout_marginTop="8dp"
                 android:text="Arroz chaufa de pollo"
                 android:textColor="#3B4CDE"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -109,25 +104,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:gravity="center"
+        android:orientation="vertical" >
 
         <TextView
             android:id="@+id/txtSeleccioneTurno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:gravity="top"
             android:text="Seleccione un turno"
             android:textColor="#000000"
-            android:textSize="15sp"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="39dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -138,7 +130,6 @@
                 android:layout_marginRight="30dp"
                 android:text="Turno"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -148,7 +139,6 @@
                 android:layout_marginLeft="60dp"
                 android:text="Tickets disponibles"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -171,7 +161,6 @@
                 android:paddingLeft="15dp"
                 android:text="(1) 12:00 - 12:20"
                 android:textColor="#090909"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -182,7 +171,6 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="104"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -206,7 +194,6 @@
                 android:paddingLeft="15dp"
                 android:text="(2) 12:20 - 12:40"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -217,7 +204,6 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="73"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -241,7 +227,6 @@
                 android:paddingLeft="15dp"
                 android:text="(3) 12:40 - 13:00"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -252,7 +237,6 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="62"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -275,7 +259,6 @@
                 android:paddingLeft="15dp"
                 android:text="(4) 13:00 - 13:20"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -286,7 +269,6 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="98"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -309,7 +291,6 @@
                 android:paddingLeft="15dp"
                 android:text="(5) 13:20 - 13:40"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -320,7 +301,6 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="80"
                 android:textColor="#000000"
-                android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
 

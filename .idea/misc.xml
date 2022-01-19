@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/drawable/btn_azul_resumen_reserva.xml" value="0.2203125" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/drawable/btn_seleccionar_turno.xml" value="0.2203125" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_reserva_resumen_reserva.xml" value="0.25" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_reserva_turno.xml" value="0.25" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/registrar_usuario.xml" value="0.25" />
         <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_main.xml" value="0.33" />
