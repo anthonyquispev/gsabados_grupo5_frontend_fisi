@@ -36,8 +36,20 @@ public class ModalConfirmacion extends AppCompatActivity {
         txtConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //iniciando el modal
+                //cerrando el modal actual
+                finish();
+                //iniciando el nuevo modal
                 startActivity(new Intent(ModalConfirmacion.this, ModalReservaConfirmada.class));
+            }
+        });
+
+        txtRegresar = findViewById(R.id.txtRegresarModal1);
+        //creando listener
+        txtRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //cerrando el modal actual
+                finish();
             }
         });
     }
