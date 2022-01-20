@@ -13,6 +13,7 @@ public class MiPerfilPrincipal extends AppCompatActivity {
     //variables para el modal
     private TextView txtCerrarSesion;
     private TextView txtCancelarReserva;
+    private TextView txtActualizarDatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,17 @@ public class MiPerfilPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
                 startActivity(new Intent(MiPerfilPrincipal.this, MiPerfilModalCerrarSesion.class));
+            }
+        });
+
+        //linkeando el modal con el boton Actualizar datos
+        txtActualizarDatos = findViewById(R.id.txtActualizarDatosMP);
+        //creando listener
+        txtActualizarDatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(MiPerfilPrincipal.this, MiPerfilActualizarDatosForm.class));
             }
         });
     }

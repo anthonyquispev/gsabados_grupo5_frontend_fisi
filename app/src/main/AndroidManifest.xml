@@ -13,19 +13,32 @@
         android:theme="@style/Theme.DIGITICKET_APP_01"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MiPerfilModalCerrarSesion"
+            android:name=".MiPerfilActualizarDatosModal"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal"
             >
         </activity>
         <activity
+            android:name=".MiPerfilActualizarDatosForm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MiPerfilModalCerrarSesion"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
             android:name=".MiPerfilModalReservaCancelada"
             android:exported="true"
-            android:theme="@style/Theme.DIGITICKET_APP_01.Modal"></activity>
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".MiPerfilModalCancelar"
             android:exported="true"
-            android:theme="@style/Theme.DIGITICKET_APP_01.Modal"></activity>
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".MiPerfilPrincipal"
             android:exported="true">
