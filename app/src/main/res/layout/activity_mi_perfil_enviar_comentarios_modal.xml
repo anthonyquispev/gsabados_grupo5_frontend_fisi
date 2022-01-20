@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MiPerfilActualizarDatosModal">
+    tools:context=".MiPerfilEnviarComentariosModal">
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Datos actualizados exitosamente"
+        android:text="Gracias por dejar tu comentario"
         android:textColor="#136CF1"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintVertical_bias="0.275" />
 
     <Button
-        android:id="@+id/btnAceptarActDatos"
+        android:id="@+id/btnAceptarEnviarComentarios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFA41D"
@@ -31,5 +31,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintVertical_bias="0.758" />
 </androidx.constraintlayout.widget.ConstraintLayout>

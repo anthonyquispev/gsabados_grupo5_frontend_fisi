@@ -122,7 +122,7 @@
             app:srcCompat="@mipmap/historial" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txtHistorialTicketsMP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -149,7 +149,7 @@
             app:srcCompat="@mipmap/comentarios" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/txtEnviarComentariosMP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -176,7 +176,7 @@
             app:srcCompat="@mipmap/horario" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/txtHorarioSemanalMP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
