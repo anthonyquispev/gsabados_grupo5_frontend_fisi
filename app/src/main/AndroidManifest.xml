@@ -13,6 +13,11 @@
         android:theme="@style/Theme.DIGITICKET_APP_01"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".MiPerfilHistorialTicketsDetalle"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
+        </activity>
+        <activity
             android:name=".MiPerfilHistorialTickets"
             android:exported="true">
             <intent-filter>

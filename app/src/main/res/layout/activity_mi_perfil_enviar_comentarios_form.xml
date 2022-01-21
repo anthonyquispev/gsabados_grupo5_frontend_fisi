@@ -23,8 +23,7 @@
         app:layout_constraintVertical_bias="0.023"
         app:rippleColor="#00FFFFFF"
         app:srcCompat="?attr/homeAsUpIndicator"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="TODO" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txtTituloComentariosForm"
