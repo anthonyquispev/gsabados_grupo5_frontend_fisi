@@ -13,10 +13,36 @@
         android:theme="@style/Theme.DIGITICKET_APP_01"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".RegistroUsuarioForm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivado"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginCodigoUniversitario"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MiPerfilHistorialTicketsDetalle"
             android:exported="true"
-            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
-        </activity>
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".MiPerfilHistorialTickets"
             android:exported="true">
