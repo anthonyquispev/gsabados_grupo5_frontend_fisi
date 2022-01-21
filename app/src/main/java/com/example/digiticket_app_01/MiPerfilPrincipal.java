@@ -10,11 +10,14 @@ import android.widget.TextView;
 
 public class MiPerfilPrincipal extends AppCompatActivity {
 
-    //variables para el modal
+    //variables para submodulos
     private TextView txtCerrarSesion;
     private TextView txtCancelarReserva;
     private TextView txtActualizarDatos;
     private TextView txtEnviarComentarios;
+    private TextView txtProgramacionSemanal;
+    private TextView txtHistorialTickets;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,28 @@ public class MiPerfilPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
                 startActivity(new Intent(MiPerfilPrincipal.this, MiPerfilEnviarComentariosForm.class));
+            }
+        });
+
+        //linkeando el modal con el boton Ver programacion semanal
+        txtProgramacionSemanal = findViewById(R.id.txtProgramacionMP);
+        //creando listener
+        txtProgramacionSemanal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(MiPerfilPrincipal.this, MiPerfilVerHorarioSemanal.class));
+            }
+        });
+
+        //Historial de Tickets
+        txtHistorialTickets = findViewById(R.id.txtHistorialTicketsMP);
+        //creando listener
+        txtHistorialTickets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(MiPerfilPrincipal.this, MiPerfilHistorialTickets.class));
             }
         });
     }

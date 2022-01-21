@@ -176,16 +176,16 @@
             app:srcCompat="@mipmap/horario" />
 
         <TextView
-            android:id="@+id/txtHorarioSemanalMP"
+            android:id="@+id/txtProgramacionMP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="Ver horario semanal"
+            android:text="Ver programación"
             android:textColor="#000000"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.382"
+            app:layout_constraintHorizontal_bias="0.36"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.446" />
