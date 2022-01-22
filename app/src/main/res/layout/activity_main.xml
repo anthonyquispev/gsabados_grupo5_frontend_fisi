@@ -21,6 +21,13 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center"/>
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/et_nombres"
+        android:hint="Nombres"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btn_Login"
@@ -32,6 +39,13 @@
     <Button
         android:id="@+id/btn_usuarios"
         android:text="Ver Usuarios"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:text="Registrar usuario"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
