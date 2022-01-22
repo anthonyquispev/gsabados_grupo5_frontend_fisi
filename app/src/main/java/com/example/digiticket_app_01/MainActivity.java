@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     RequestQueue queue;
     //    String url ="https://my-json-server.typicode.com/typicode/demo/comments";
-
+    // Rutas
 //    String urlUsuarios = "http://192.168.101.11:4000/api/usuarios";
 //    String urlLogin = "http://192.168.101.11:4000/api/usuarios/login";
 //    String urlRegister = "http://192.168.101.11:4000/api/usuarios";
