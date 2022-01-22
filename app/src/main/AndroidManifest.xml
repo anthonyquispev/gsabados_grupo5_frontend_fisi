@@ -32,12 +32,8 @@
         </activity>
         <activity
             android:name=".ModalDetalleEntrada"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
         </activity>
         <activity
             android:name=".PantallaInicio"

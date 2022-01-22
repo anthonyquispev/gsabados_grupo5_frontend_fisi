@@ -21,7 +21,7 @@ public class ReservaEscogerTurno extends AppCompatActivity {
         setContentView(R.layout.activity_reserva_escoger_turno);
 
         //linkeando el layout (boton) con activity Resumen de Reserva
-        lyTurno1 = findViewById(R.id.layoutTurno1);
+        lyTurno1 = findViewById(R.id.btnEscogerSedeCangallo);
         //creando listener
         lyTurno1.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PantallaInicio extends AppCompatActivity {
     private ImageButton btnVerDetalle;
 
+    private ImageButton btnReservar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,16 @@ public class PantallaInicio extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
                 startActivity(new Intent(PantallaInicio.this, ModalDetalleEntrada.class));
+            }
+        });
+
+        btnReservar = findViewById(R.id.btnReservarHome);
+        //creando listener
+        btnReservar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(PantallaInicio.this, ReservaEscogerSede.class));
             }
         });
     }

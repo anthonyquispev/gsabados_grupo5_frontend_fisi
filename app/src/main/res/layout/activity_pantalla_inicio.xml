@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.287"
-        app:srcCompat="@mipmap/ver_detalles" />
+        app:srcCompat="@mipmap/ver_detalles"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/imageButton22"
@@ -30,7 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.414"
-        app:srcCompat="@mipmap/ver_detalles" />
+        app:srcCompat="@mipmap/ver_detalles"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/imageButton24"
@@ -43,7 +45,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.372"
-        app:srcCompat="@mipmap/ver_detalles" />
+        app:srcCompat="@mipmap/ver_detalles"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton23"
@@ -56,7 +59,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.331"
-        app:srcCompat="@mipmap/ver_detalles" />
+        app:srcCompat="@mipmap/ver_detalles"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txtNombreApRMostrar2"
@@ -430,7 +434,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.255"
-                        app:srcCompat="@mipmap/check" />
+                        app:srcCompat="@mipmap/check"
+                        tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <ImageButton
                         android:id="@+id/imageButton17_1"
@@ -443,7 +448,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.502"
-                        app:srcCompat="@mipmap/check" />
+                        app:srcCompat="@mipmap/check"
+                        tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck,SpeakableTextPresentCheck" />
 
                     <ImageButton
                         android:id="@+id/imageButton18_1"
@@ -456,7 +462,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.705"
-                        app:srcCompat="@mipmap/check" />
+                        app:srcCompat="@mipmap/check"
+                        tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck,TouchTargetSizeCheck" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -573,7 +580,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.255"
-                    app:srcCompat="@mipmap/check" />
+                    app:srcCompat="@mipmap/check"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <ImageButton
                     android:id="@+id/imageButton17"
@@ -586,7 +594,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.502"
-                    app:srcCompat="@mipmap/check" />
+                    app:srcCompat="@mipmap/check"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/imageButton18"
@@ -599,7 +608,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.705"
-                    app:srcCompat="@mipmap/check" />
+                    app:srcCompat="@mipmap/check"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -693,7 +703,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.502"
-                    app:srcCompat="@mipmap/check" />
+                    app:srcCompat="@mipmap/check"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <ImageButton
                     android:id="@+id/imageButton21"
@@ -706,41 +717,41 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.246"
-                    app:srcCompat="@mipmap/check" />
+                    app:srcCompat="@mipmap/check"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ImageButton
-        android:id="@+id/imageButton15"
-        android:layout_width="39dp"
-        android:layout_height="34dp"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.624"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952"
-        app:srcCompat="@mipmap/ver" />
 
-    <ImageButton
-        android:id="@+id/imageButton16"
-        android:layout_width="39dp"
-        android:layout_height="34dp"
-        android:backgroundTint="#FFFFFF"
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintHorizontal_bias="0.616"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951"
+        app:layout_constraintVertical_bias="0.947"
+        app:srcCompat="@mipmap/verticket" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"
         app:srcCompat="@mipmap/miperfil" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/btnReservarHome"
         android:layout_width="44dp"
         android:layout_height="34dp"
         android:backgroundTint="#FFFFFF"
@@ -750,7 +761,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95"
-        app:srcCompat="@mipmap/reservar" />
+        app:srcCompat="@mipmap/reservar"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txtNombreApRMostrar11"
@@ -777,7 +789,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95"
-        app:srcCompat="@mipmap/inicio" />
+        app:srcCompat="@mipmap/inicio"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ProgressBar
         android:id="@+id/progressBar2"
