@@ -12,6 +12,7 @@ public class PantallaInicio extends AppCompatActivity {
     private ImageButton btnVerDetalle;
 
     private ImageButton btnReservar;
+    private TextView texto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
