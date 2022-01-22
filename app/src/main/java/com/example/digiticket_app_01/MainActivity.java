@@ -50,9 +50,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Retrofit retrofitClient = RetrofitClient.getInstance();
-//        iMyService = retrofitClient.create(IMyService.class);
-
         et_cod_usuario = findViewById(R.id.et_cod_usuario);
         et_password = findViewById(R.id.et_password);
         et_nombres = findViewById(R.id.et_nombres);
