@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReservaModalReservaConfirmada">
+    tools:context=".LoginModalUsuarioDesconocido">
 
     <TextView
-        android:id="@+id/txtTituloModal2"
+        android:id="@+id/txtTituloModalUsuarioDesconocido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡Reserva exitosa!"
+        android:text="Usuario no encontrado, active\n su cuenta por favor"
         android:textColor="#136CF1"
         android:textSize="17dp"
         android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,15 +22,16 @@
         app:layout_constraintVertical_bias="0.347" />
 
     <Button
-        android:id="@+id/btnAceptarModal2"
+        android:id="@+id/btnAceptarModalUsuarioDesconocido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFA41D"
-        android:text="ACEPTAR"
+        android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintVertical_bias="0.739" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

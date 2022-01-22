@@ -49,7 +49,7 @@ public class RegistroUsuarioForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //iniciando el modal
-                startActivity(new Intent(RegistroUsuarioForm.this, LoginActivado.class));
+                startActivity(new Intent(RegistroUsuarioForm.this, RegistroUsuarioModalCuentaActivada.class));
             }
         });
     }
