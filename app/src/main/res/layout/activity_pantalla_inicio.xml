@@ -727,7 +727,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/btnVerTicketHome"
         android:layout_width="38dp"
         android:layout_height="31dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -739,7 +739,7 @@
         app:srcCompat="@mipmap/verticket" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/btnMiPerfilHome"
         android:layout_width="31dp"
         android:layout_height="29dp"
         app:layout_constraintBottom_toBottomOf="parent"

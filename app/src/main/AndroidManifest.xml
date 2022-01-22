@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ModalDetalleEntrada"
+            android:name=".PantallaInicioModalInfoNutricional"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
         </activity>
@@ -150,11 +150,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ModalReservaConfirmada"
+            android:name=".ReservaModalReservaConfirmada"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
-            android:name=".ModalConfirmacion"
+            android:name=".ReservaModalConfirmacion"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity

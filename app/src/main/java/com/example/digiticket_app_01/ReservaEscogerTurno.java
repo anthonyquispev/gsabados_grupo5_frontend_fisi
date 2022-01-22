@@ -27,7 +27,7 @@ public class ReservaEscogerTurno extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaResumenReserva.class));
+                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -38,7 +38,7 @@ public class ReservaEscogerTurno extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaResumenReserva.class));
+                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -49,7 +49,7 @@ public class ReservaEscogerTurno extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaResumenReserva.class));
+                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -60,7 +60,7 @@ public class ReservaEscogerTurno extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaResumenReserva.class));
+                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -71,7 +71,7 @@ public class ReservaEscogerTurno extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaResumenReserva.class));
+                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
     }

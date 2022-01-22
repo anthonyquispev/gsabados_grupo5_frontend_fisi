@@ -1,21 +1,21 @@
 package com.example.digiticket_app_01;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
-public class ModalReservaConfirmada extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class PantallaInicioModalInfoNutricional extends AppCompatActivity {
 
     private Button btnAceptar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modal_reserva_confirmada);
+        setContentView(R.layout.activity_pantalla_inicio_modal_info_nutricional);
 
         //obteniendo objeto Pantalla
         DisplayMetrics medidasVentana = new DisplayMetrics();
@@ -35,7 +35,7 @@ public class ModalReservaConfirmada extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //iniciando el activity
-                startActivity(new Intent(ModalReservaConfirmada.this, ReservaMostrarTicket.class));
+                startActivity(new Intent(PantallaInicioModalInfoNutricional.this, PantallaInicio.class));
             }
         });
     }

@@ -24,7 +24,17 @@ public class ReservaEscogerSede extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //iniciando el modal
-                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerPlato.class));
+                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
+            }
+        });
+
+        btnCangallo = findViewById(R.id.btnEscogerSedeCangallo);
+        //creando listener
+        btnCangallo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
             }
         });
     }

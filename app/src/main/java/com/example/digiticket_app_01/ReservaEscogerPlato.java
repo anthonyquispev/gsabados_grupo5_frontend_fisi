@@ -22,7 +22,7 @@ public class ReservaEscogerPlato extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //iniciando el modal
-                startActivity(new Intent(ReservaEscogerPlato.this, ReservaEscogerTurno.class));
+                startActivity(new Intent(ReservaEscogerPlato.this, ReservaResumenReserva.class));
             }
         });
     }

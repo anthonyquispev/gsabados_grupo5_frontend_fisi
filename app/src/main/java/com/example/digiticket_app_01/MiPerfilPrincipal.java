@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MiPerfilPrincipal extends AppCompatActivity {
@@ -18,13 +19,16 @@ public class MiPerfilPrincipal extends AppCompatActivity {
     private TextView txtProgramacionSemanal;
     private TextView txtHistorialTickets;
 
+    //para regresar a la pagina principal
+    private ImageView btnVolverInicio;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mi_perfil_principal);
 
-        //linkeando el modal con el boton Cancelar Reserva
+        //Ir a Cancelar Reserva
         txtCancelarReserva = findViewById(R.id.txtCancelarReserva);
         //creando listener
         txtCancelarReserva.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +40,7 @@ public class MiPerfilPrincipal extends AppCompatActivity {
         });
 
 
-        //linkeando el modal con el boton Cerrar Sesion
+        //Ir a Cerrar Sesion
         txtCerrarSesion = findViewById(R.id.txtCerrarSesion);
         //creando listener
         txtCerrarSesion.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +51,7 @@ public class MiPerfilPrincipal extends AppCompatActivity {
             }
         });
 
-        //linkeando el modal con el boton Actualizar datos
+        //Ir a Actualizar datos
         txtActualizarDatos = findViewById(R.id.txtActualizarDatosMP);
         //creando listener
         txtActualizarDatos.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +62,7 @@ public class MiPerfilPrincipal extends AppCompatActivity {
             }
         });
 
-        //linkeando el modal con el boton Actualizar datos
+        //Ir a Enviar comentarios
         txtEnviarComentarios = findViewById(R.id.txtEnviarComentariosMP);
         //creando listener
         txtEnviarComentarios.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +73,7 @@ public class MiPerfilPrincipal extends AppCompatActivity {
             }
         });
 
-        //linkeando el modal con el boton Ver programacion semanal
+        //Ir a Programacion semanal
         txtProgramacionSemanal = findViewById(R.id.txtProgramacionMP);
         //creando listener
         txtProgramacionSemanal.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +84,7 @@ public class MiPerfilPrincipal extends AppCompatActivity {
             }
         });
 
-        //Historial de Tickets
+        //Ir a Historial de tickets
         txtHistorialTickets = findViewById(R.id.txtHistorialTicketsMP);
         //creando listener
         txtHistorialTickets.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +92,17 @@ public class MiPerfilPrincipal extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
                 startActivity(new Intent(MiPerfilPrincipal.this, MiPerfilHistorialTickets.class));
+            }
+        });
+
+        //Volver a Inicio
+        btnVolverInicio = findViewById(R.id.btnVolverInicioMP);
+        //creando listener
+        btnVolverInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(MiPerfilPrincipal.this, PantallaInicio.class));
             }
         });
     }

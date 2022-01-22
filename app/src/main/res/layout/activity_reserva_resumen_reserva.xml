@@ -255,7 +255,7 @@
         app:srcCompat="@mipmap/jugo" />
 
     <Button
-        android:id="@+id/btn_reservar_RR"
+        android:id="@+id/btnInicioFinReserva"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#136CF1"

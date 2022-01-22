@@ -6,10 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-public class ModalConfirmacion extends AppCompatActivity {
+public class ReservaModalConfirmacion extends AppCompatActivity {
 
     //variables para el modal
     private TextView txtRegresar;
@@ -18,7 +17,7 @@ public class ModalConfirmacion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modal_confirmacion);
+        setContentView(R.layout.activity_reserva_modal_confirmacion);
 
         //obteniendo objeto Pantalla
         DisplayMetrics medidasVentana = new DisplayMetrics();
@@ -39,7 +38,7 @@ public class ModalConfirmacion extends AppCompatActivity {
                 //cerrando el modal actual
                 finish();
                 //iniciando el nuevo modal
-                startActivity(new Intent(ModalConfirmacion.this, ModalReservaConfirmada.class));
+                startActivity(new Intent(ReservaModalConfirmacion.this, ReservaModalReservaConfirmada.class));
             }
         });
 

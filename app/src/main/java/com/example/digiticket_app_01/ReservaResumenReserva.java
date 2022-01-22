@@ -19,13 +19,13 @@ public class ReservaResumenReserva extends AppCompatActivity {
         setContentView(R.layout.activity_reserva_resumen_reserva);
 
         //linkeando el modal con el boton
-        btnReservar = findViewById(R.id.btn_reservar_RR);
+        btnReservar = findViewById(R.id.btnInicioFinReserva);
         //creando listener
         btnReservar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //iniciando el modal
-                startActivity(new Intent(ReservaResumenReserva.this, ModalConfirmacion.class));
+                startActivity(new Intent(ReservaResumenReserva.this, ReservaModalConfirmacion.class));
             }
         });
     }
