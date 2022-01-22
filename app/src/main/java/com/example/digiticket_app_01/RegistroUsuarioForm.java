@@ -24,7 +24,7 @@ public class RegistroUsuarioForm extends AppCompatActivity {
         setContentView(R.layout.activity_registro_usuario_form);
 
         //menu dropdown
-        autoCompleteTextView = findViewById(R.id.drop_items);
+        autoCompleteTextView = findViewById(R.id.itemSedeRegistro);
         //agregando opciones al menu
         String [] opciones = {"Ciudad Universitaria","Cangallo"};
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,R.layout.option_item_dropdown,opciones);

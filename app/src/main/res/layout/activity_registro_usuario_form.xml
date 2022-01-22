@@ -91,7 +91,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/menuSede"
+        android:id="@+id/menuSedeRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Sede de preferencia"
@@ -108,7 +108,7 @@
         app:layout_constraintVertical_bias="0.40">
 
         <AutoCompleteTextView
-            android:id="@+id/drop_items"
+            android:id="@+id/itemSedeRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:enabled="false"

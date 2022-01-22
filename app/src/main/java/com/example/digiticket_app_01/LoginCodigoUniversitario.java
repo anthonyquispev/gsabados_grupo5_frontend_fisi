@@ -22,7 +22,7 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
         btnSiguienteLoginCod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //regresando a vista Mi Perfil principal
+                //navegando al formulario de registro
                 startActivity(new Intent(LoginCodigoUniversitario.this, RegistroUsuarioForm.class));
             }
         });
