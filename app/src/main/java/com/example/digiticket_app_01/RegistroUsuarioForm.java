@@ -17,6 +17,7 @@ public class RegistroUsuarioForm extends AppCompatActivity {
 
     //para el boton Guardar datos
     private Button btnGuardarDatos;
+    private Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
