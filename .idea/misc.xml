@@ -13,8 +13,11 @@
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/drawable/location.xml" value="0.2203125" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/drawable/progressbar_linea_naranja.xml" value="0.2203125" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_login_activado.xml" value="0.25" />
+        <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_login_cambiar_contrasena.xml" value="0.22" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_login_codigo_universitario.xml" value="0.25" />
+        <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_login_modal_contrasena_actualizada.xml" value="0.22" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_login_modal_usuario_desconocido.xml" value="0.33" />
+        <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_login_recuperar_contrasena.xml" value="0.25" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_mi_perfil_actualizar_datos_form.xml" value="0.25" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/activity_mi_perfil_actualizar_datos_modal.xml" value="0.25" />

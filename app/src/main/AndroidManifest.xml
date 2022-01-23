@@ -13,15 +13,36 @@
         android:theme="@style/Theme.DIGITICKET_APP_01"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".RegistroUsuarioModalCancelarRegistro"
+            android:name=".LoginModalContrasenaActualizada"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
         </activity>
         <activity
+            android:name=".LoginCambiarContrasena"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginRecuperarContrasena"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistroUsuarioModalCancelarRegistro"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
             android:name=".RegistroUsuarioModalCuentaActivada"
             android:exported="true"
-            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
-        </activity>
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".RegistroUsuarioCambiarContrasena"
             android:exported="true">
@@ -34,8 +55,7 @@
         <activity
             android:name=".LoginModalUsuarioDesconocido"
             android:exported="true"
-            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
-        </activity>
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".ReservaEscogerSede"
             android:exported="true">
