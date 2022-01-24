@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.digiticket_app_01">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DIGITICKET_APP_01"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".LoginModalContrasenaActualizada"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" >
+        </activity>
+        <activity
+            android:name=".LoginCambiarContrasena"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginRecuperarContrasena"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistroUsuarioModalCancelarRegistro"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".RegistroUsuarioModalCuentaActivada"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".RegistroUsuarioCambiarContrasena"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginModalUsuarioDesconocido"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".ReservaEscogerSede"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReservaEscogerPlato"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PantallaInicioModalInfoNutricional"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".PantallaInicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistroUsuarioForm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivado"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginCodigoUniversitario"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MiPerfilHistorialTicketsDetalle"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".MiPerfilHistorialTickets"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MiPerfilVerHorarioSemanal"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MiPerfilEnviarComentariosModal"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".MiPerfilEnviarComentariosForm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MiPerfilActualizarDatosModal"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".MiPerfilActualizarDatosForm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MiPerfilModalCerrarSesion"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".MiPerfilModalReservaCancelada"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".MiPerfilModalCancelar"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".MiPerfilPrincipal"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReservaEscogerTurno"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReservaModalReservaConfirmada"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".ReservaModalConfirmacion"
+            android:exported="true"
+            android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
+        <activity
+            android:name=".ReservaMostrarTicket"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReservaResumenReserva"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
