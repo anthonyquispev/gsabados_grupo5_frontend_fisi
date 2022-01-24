@@ -56,7 +56,6 @@ public class ReservaEscogerSede extends AppCompatActivity {
             public void onClick(View view) {
                 //cambiando fondo y texto
                 btnCangallo.setBackground(getDrawable(R.drawable.btn_aceptar_sede));
-                //btnCangallo.setBackgroundResource();
                 txtSedeCangallo.setTextColor(getResources().getColor(R.color.white));
                 //iniciando el modal
                 startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
