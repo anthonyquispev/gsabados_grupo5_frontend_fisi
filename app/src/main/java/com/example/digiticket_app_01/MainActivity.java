@@ -44,14 +44,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
     }
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Retrofit retrofitClient = RetrofitClient.getInstance();
-//        iMyService = retrofitClient.create(IMyService.class);
+        /*
+        Retrofit retrofitClient = RetrofitClient.getInstance();
+        iMyService = retrofitClient.create(IMyService.class);
 
         et_cod_usuario = findViewById(R.id.et_cod_usuario);
         et_password = findViewById(R.id.et_password);
@@ -86,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 registerRequest(et_cod_usuario.getText().toString(), et_password.getText().toString(), et_nombres.getText().toString());
             }
         });
+        */
     }
 
     private void usuariosRequest() {
