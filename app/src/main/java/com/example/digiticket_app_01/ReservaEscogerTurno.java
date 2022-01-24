@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ReservaEscogerTurno extends AppCompatActivity {
-
     private ConstraintLayout lyTurno1;
     private ConstraintLayout lyTurno2;
     private ConstraintLayout lyTurno3;
