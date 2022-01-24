@@ -52,12 +52,40 @@
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/fragment_second.xml" value="0.13949275362318841" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/option_item_dropdown.xml" value="0.14492753623188406" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/layout/registrar_usuario.xml" value="0.25" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_login_activado.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_login_cambiar_contrasena.xml" value="0.25" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_login_codigo_universitario.xml" value="0.33" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_login_modal_contrasena_actualizada.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_login_modal_usuario_desconocido.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_login_recuperar_contrasena.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_actualizar_datos_form.xml" value="0.25" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_actualizar_datos_modal.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_enviar_comentarios_modal.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_historial_tickets_detalle.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_modal_cancelar.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_modal_cerrar_sesion.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_modal_reserva_cancelada.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_principal.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_mi_perfil_ver_horario_semanal.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_pantalla_inicio.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_pantalla_inicio_modal_info_nutricional.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_prueba.xml" value="0.1" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_registro_usuario_form.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_registro_usuario_modal_cancelar_registro.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_registro_usuario_modal_cuenta_activada.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_reserva_escoger_plato.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_reserva_escoger_sede.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_reserva_escoger_turno.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_reserva_modal_confirmacion.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_reserva_modal_reserva_confirmada.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_reserva_mostrar_ticket.xml" value="0.25" />
+        <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/activity_reserva_resumen_reserva.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Lorena/Desktop/Proyectos_Progra/Android/ProyectoM/app/src/main/res/layout/registrar_usuario.xml" value="0.20260416666666667" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

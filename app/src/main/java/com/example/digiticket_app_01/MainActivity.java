@@ -28,11 +28,6 @@ public class MainActivity extends AppCompatActivity {
     Button btn_login, btn_usuarios, btn_registrar;
 
     RequestQueue queue;
-    //    String url ="https://my-json-server.typicode.com/typicode/demo/comments";
-
-//    String urlUsuarios = "http://192.168.101.11:4000/api/usuarios";
-//    String urlLogin = "http://192.168.101.11:4000/api/usuarios/login";
-//    String urlRegister = "http://192.168.101.11:4000/api/usuarios";
 
     String urlAlumnos = "https://micro-usuarios.herokuapp.com/api/alumnos";
     String urlLogin = "https://micro-usuarios.herokuapp.com/api/alumnos/login";
@@ -44,16 +39,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
     }
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        /*
-        Retrofit retrofitClient = RetrofitClient.getInstance();
-        iMyService = retrofitClient.create(IMyService.class);
 
         et_cod_usuario = findViewById(R.id.et_cod_usuario);
         et_password = findViewById(R.id.et_password);
@@ -68,27 +59,22 @@ public class MainActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                loginUser(et_cod_usuario.getText().toString(), et_password.getText().toString());
                 loginRequest(et_cod_usuario.getText().toString(), et_password.getText().toString());
             }
         });
-
         btn_usuarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                usuarios();
                 usuariosRequest();
             }
         });
-
         btn_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                registrar(et_cod_usuario.getText().toString(), et_password.getText().toString(), et_nombres.getText().toString());
                 registerRequest(et_cod_usuario.getText().toString(), et_password.getText().toString(), et_nombres.getText().toString());
             }
         });
-        */
+
     }
 
     private void usuariosRequest() {
