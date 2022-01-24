@@ -59,12 +59,14 @@ public class ReservaEscogerPlato extends AppCompatActivity {
                 btnNivel1.setTextColor(getResources().getColor(R.color.white));
                 //cambiar fondo
                 btnNivel1.setBackgroundTintList(ContextCompat.getColorStateList(ReservaEscogerPlato.this,R.color.orange));
+                //btnNivel1.setBackgroundResource();
 
                 //Cambiando boton nivel 2
                 //cambiando color de texto
                 btnNivel2.setTextColor(getResources().getColor(R.color.gris));
                 //cambiar fondo
                 btnNivel2.setBackgroundTintList(ContextCompat.getColorStateList(ReservaEscogerPlato.this,R.color.white));
+                //btnNivel2.setBackgroundResource();
             }
         });
 
@@ -79,12 +81,14 @@ public class ReservaEscogerPlato extends AppCompatActivity {
                 btnNivel2.setTextColor(getResources().getColor(R.color.white));
                 //cambiar fondo
                 btnNivel2.setBackgroundTintList(ContextCompat.getColorStateList(ReservaEscogerPlato.this,R.color.orange));
+                //btnNivel2.setBackgroundResource();
 
                 //Cambiando boton nivel 1
                 //cambiando color de texto
                 btnNivel1.setTextColor(getResources().getColor(R.color.gris));
                 //cambiar fondo
                 btnNivel1.setBackgroundTintList(ContextCompat.getColorStateList(ReservaEscogerPlato.this,R.color.white));
+                //btnNivel1.setBackgroundResource();
             }
         });
     }

@@ -126,7 +126,6 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 //cambiando fondo y texto
                 lyTurno5.setBackground(getDrawable(R.drawable.btn_aceptar_turno));
                 txtTicketsDisponiblesT5.setTextColor(getResources().getColor(R.color.white));
-                lyTurno3.setBackground(getDrawable(R.drawable.btn_aceptar_sede));
                 txtTurno5.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
                 startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
