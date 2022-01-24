@@ -14,6 +14,7 @@ public class LoginActivado extends AppCompatActivity {
     private Button btnIngresar;
     private TextView btnRecuperarContrasena;
     private TextView txtxIngresarCuentaDiferente;
+    private TextView btnI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
