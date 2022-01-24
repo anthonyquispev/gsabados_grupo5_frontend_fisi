@@ -612,7 +612,7 @@
                     android:id="@+id/txtNombreApRMostrar9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Desde la 7:30 am"
+                    android:text="Desde las 7:30 am"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"

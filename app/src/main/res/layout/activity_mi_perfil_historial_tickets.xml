@@ -44,8 +44,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,10 +67,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="N°"
                     android:textColor="@android:color/white"
-                    android:textSize="14sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -78,10 +77,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="Sede"
                     android:textColor="@android:color/white"
-                    android:textSize="14sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -89,10 +87,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
+                    android:padding="0dp"
                     android:text="Fecha"
                     android:textColor="@android:color/white"
-                    android:textSize="14sp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -103,7 +101,7 @@
                     android:padding="10sp"
                     android:text="Detalle"
                     android:textColor="@android:color/white"
-                    android:textSize="14sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
 
@@ -121,27 +119,27 @@
                     android:padding="10sp"
                     android:text="58"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
-                    android:text="C. Universitaria"
+                    android:padding="0sp"
+                    android:text="C.Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:padding="10sp"
                     android:text="05-06-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15dp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle1"
@@ -165,17 +163,16 @@
                     android:padding="10sp"
                     android:text="57"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="C. Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -185,7 +182,7 @@
                     android:padding="10sp"
                     android:text="04-06-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle2"
@@ -208,17 +205,16 @@
                     android:padding="10sp"
                     android:text="56"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="Cangallo"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -228,7 +224,7 @@
                     android:padding="10sp"
                     android:text="02-06-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle3"
@@ -251,17 +247,16 @@
                     android:padding="10sp"
                     android:text="55"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="C. Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -271,7 +266,7 @@
                     android:padding="10sp"
                     android:text="01-06-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle4"
@@ -294,17 +289,16 @@
                     android:padding="10sp"
                     android:text="54"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="C. Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -314,7 +308,7 @@
                     android:padding="10sp"
                     android:text="28-05-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle5"
@@ -337,17 +331,16 @@
                     android:padding="10sp"
                     android:text="53"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="C. Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -357,7 +350,7 @@
                     android:padding="10sp"
                     android:text="27-05-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle6"
@@ -380,17 +373,16 @@
                     android:padding="10sp"
                     android:text="52"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="Cangallo"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -400,7 +392,7 @@
                     android:padding="10sp"
                     android:text="26-05-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle7"
@@ -423,17 +415,16 @@
                     android:padding="10sp"
                     android:text="51"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="C. Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -443,7 +434,7 @@
                     android:padding="10sp"
                     android:text="24-05-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle8"
@@ -466,17 +457,16 @@
                     android:padding="10sp"
                     android:text="50"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="C. Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -509,17 +499,16 @@
                     android:padding="10sp"
                     android:text="49"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:gravity="center_horizontal"
-                    android:padding="10sp"
                     android:text="C. Universitaria"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -529,7 +518,7 @@
                     android:padding="10sp"
                     android:text="20-05-2021"
                     android:textColor="#000000"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/btnDetalle10"
