@@ -18,6 +18,7 @@ import com.example.digiticket_app_01.Retrofit.RetrofitClient;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
     EditText et_cod_usuario, et_password;
     Button btn_login, btn_usuarios;
     CompositeDisposable compositeDisposable = new CompositeDisposable();
@@ -27,12 +28,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
     }
+    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
         Retrofit retrofitClient = RetrofitClient.getInstance();
         iMyService = retrofitClient.create(IMyService.class);
 
@@ -55,8 +58,10 @@ public class MainActivity extends AppCompatActivity {
                 usuarios();
             }
         });
+        */
     }
 
+    /*
     private void loginUser(String cod_usuario, String password) {
         Toast.makeText(MainActivity.this, "Cod_usuario:" + cod_usuario + "__Pass:" + password, Toast.LENGTH_SHORT).show();
         compositeDisposable.add(iMyService.login(cod_usuario, password)
@@ -90,5 +95,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }));
     }
-
+    */
 }

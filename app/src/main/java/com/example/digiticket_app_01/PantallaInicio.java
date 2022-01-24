@@ -9,20 +9,60 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PantallaInicio extends AppCompatActivity {
-    private ImageButton btnVerDetalle;
+
+    //para navegar a los modulos
     private ImageButton btnReservar;
     private ImageView btnVerTicket;
     private ImageView btnMiPerfil;
+
+    //ver info nutricional
+    private ImageView btnVerDetalle1;
+    private ImageView btnVerDetalle2;
+    private ImageView btnVerDetalle3;
+    private ImageView btnVerDetalle4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_inicio);
 
-        //Ver informacion nutricional
-        btnVerDetalle = findViewById(R.id.btnVerDetalle);
+        //Ver informacion nutricional 1
+        btnVerDetalle1 = findViewById(R.id.btnVerDetallesHome1);
         //creando listener
-        btnVerDetalle.setOnClickListener(new View.OnClickListener() {
+        btnVerDetalle1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //abriendo modal de Inf. nutricional
+                startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
+            }
+        });
+
+        //Ver informacion nutricional 2
+        btnVerDetalle2 = findViewById(R.id.btnVerDetallesHome2);
+        //creando listener
+        btnVerDetalle2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //abriendo modal de Inf. nutricional
+                startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
+            }
+        });
+
+        //Ver informacion nutricional 3
+        btnVerDetalle3 = findViewById(R.id.btnVerDetallesHome3);
+        //creando listener
+        btnVerDetalle3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //abriendo modal de Inf. nutricional
+                startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
+            }
+        });
+
+        //Ver informacion nutricional 4
+        btnVerDetalle4 = findViewById(R.id.btnVerDetallesHome4);
+        //creando listener
+        btnVerDetalle4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //abriendo modal de Inf. nutricional

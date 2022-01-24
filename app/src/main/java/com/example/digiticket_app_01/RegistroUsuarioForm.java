@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class RegistroUsuarioForm extends AppCompatActivity {
 
     //Variables para el menu dropdown
@@ -17,6 +19,9 @@ public class RegistroUsuarioForm extends AppCompatActivity {
 
     //para el boton Guardar datos
     private Button btnGuardarDatos;
+
+    //para retroceder
+    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,17 @@ public class RegistroUsuarioForm extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
                 startActivity(new Intent(RegistroUsuarioForm.this, RegistroUsuarioModalCuentaActivada.class));
+            }
+        });
+
+        //para retroceder
+        btnRetroceder = findViewById(R.id.floatingActionButton7);
+        //creando listener
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(RegistroUsuarioForm.this, RegistroUsuarioCambiarContrasena.class));
             }
         });
     }

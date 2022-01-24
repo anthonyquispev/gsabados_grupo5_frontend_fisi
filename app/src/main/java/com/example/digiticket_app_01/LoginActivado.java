@@ -13,6 +13,7 @@ public class LoginActivado extends AppCompatActivity {
 
     private Button btnIngresar;
     private TextView btnRecuperarContrasena;
+    private TextView txtxIngresarCuentaDiferente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,15 @@ public class LoginActivado extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoginActivado.this, LoginRecuperarContrasena.class));
+            }
+        });
+
+        //para ingresar con otra cuenta
+        txtxIngresarCuentaDiferente = findViewById(R.id.txtxIngresarCuentaDiferente);
+        txtxIngresarCuentaDiferente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivado.this, LoginCodigoUniversitario.class));
             }
         });
     }

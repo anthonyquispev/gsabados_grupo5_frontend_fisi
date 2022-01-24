@@ -10,11 +10,16 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MiPerfilEnviarComentariosForm extends AppCompatActivity {
 
     private Button btnEnviar;
     //Variables para el menu dropdown
     private AutoCompleteTextView autoCompleteTextView;
+
+    //para retroceder
+    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +53,17 @@ public class MiPerfilEnviarComentariosForm extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
                 startActivity(new Intent(MiPerfilEnviarComentariosForm.this, MiPerfilEnviarComentariosModal.class));
+            }
+        });
+
+        //para retroceder
+        btnRetroceder = findViewById(R.id.floatingActionButton4);
+        //creando listener
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
+                startActivity(new Intent(MiPerfilEnviarComentariosForm.this, MiPerfilPrincipal.class));
             }
         });
     }

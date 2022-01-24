@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="0.578">
 
         <TextView
-            android:id="@+id/textView1_1"
+            android:id="@+id/textViewCU"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SEDE CIUDAD UNIVERSITARIA"
@@ -157,7 +157,7 @@
         app:layout_constraintVertical_bias="0.92">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textViewSedeCangallo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SEDE CANGALLO"

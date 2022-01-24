@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.942" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/floatingActionButtonBackTurno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -214,13 +214,13 @@
         app:layout_constraintVertical_bias="0.849" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonEscogerNivel1"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nivel 1"
         android:textAllCaps="false"
-        android:textColor="#FF5722"
+        android:textColor="#818181"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -228,10 +228,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.423"
-        app:strokeColor="@color/orange" />
+        app:strokeColor="#8A8A8A" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonEscogerNivel2"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

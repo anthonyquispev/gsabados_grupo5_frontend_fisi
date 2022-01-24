@@ -2,6 +2,7 @@ package com.example.digiticket_app_01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -46,6 +47,7 @@ public class MiPerfilModalCerrarSesion extends AppCompatActivity {
             public void onClick(View view) {
                 //cerrando el modal actual
                 finish();
+                startActivity(new Intent(MiPerfilModalCerrarSesion.this, LoginActivado.class));
             }
         });
     }

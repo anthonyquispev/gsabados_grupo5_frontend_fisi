@@ -7,7 +7,7 @@
     tools:context=".ReservaEscogerTurno">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/floatingActionButtonBackSede"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -159,7 +159,7 @@
         app:layout_constraintVertical_bias="0.59">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/txtTurno1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(1) 12:00 - 12:20"
@@ -200,7 +200,7 @@
         app:layout_constraintVertical_bias="0.677">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/txtTurno2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(2) 12:20 - 12:40"
@@ -241,7 +241,7 @@
         app:layout_constraintVertical_bias="0.764">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/txtTurno3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(3) 12:40 - 13:00"
@@ -280,7 +280,7 @@
         app:layout_constraintVertical_bias="0.85">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/txtTurno4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(4) 13:00 - 13:20"
@@ -319,7 +319,7 @@
         app:layout_constraintVertical_bias="0.935">
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/txtTurno5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(5) 13:20 - 13:40"

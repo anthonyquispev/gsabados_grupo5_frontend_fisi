@@ -41,285 +41,508 @@
         app:layout_constraintVertical_bias="0.112" />
 
 
-    <TableLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:background="@android:color/white"
+        android:layout_height="350dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25">
+        app:layout_constraintVertical_bias="0.400"
+        tools:ignore="SpeakableTextPresentCheck">
 
-        <!-- Table Heading -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
 
-        <TableRow android:background="#FF7A00">
+            <!-- Table Heading -->
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="N°"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+            <TableRow android:background="#FF7A00">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="Sede"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="N°"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="Fecha"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Sede"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="Detalle"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Fecha"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
-
-        </TableRow>
-
-        <!-- Table Data -->
-
-        <TableRow android:background="#25FDE6C3">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="58"
-                android:textColor="#000000"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="C. Universitaria"
-                android:textColor="#000000"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="05-06-2021"
-                android:textColor="#000000"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:id="@+id/btnDetalle1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="27dp"
-                app:srcCompat="@mipmap/ver" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Detalle"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
 
-        </TableRow>
+            </TableRow>
 
-        <TableRow android:background="#25FDE6C3">
+            <!-- Table Data -->
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="57"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+            <TableRow android:background="#25FDE6C3">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="C. Universitaria"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="58"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="04-06-2021"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-            <ImageView
-                android:id="@+id/btnDetalle2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="27dp"
-                app:srcCompat="@mipmap/ver" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="05-06-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-        </TableRow>
+                <ImageView
+                    android:id="@+id/btnDetalle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
 
-        <TableRow android:background="#25FDE6C3">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="56"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+            </TableRow>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="Cangallo"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+            <TableRow android:background="#25FDE6C3">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="02-06-2021"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="57"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-            <ImageView
-                android:id="@+id/btnDetalle3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="27dp"
-                app:srcCompat="@mipmap/ver" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-        </TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="04-06-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-        <TableRow android:background="#25FDE6C3">
+                <ImageView
+                    android:id="@+id/btnDetalle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="55"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+            </TableRow>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="C. Universitaria"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+            <TableRow android:background="#25FDE6C3">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="01-06-2021"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="56"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-            <ImageView
-                android:id="@+id/btnDetalle4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="27dp"
-                app:srcCompat="@mipmap/ver" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Cangallo"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-        </TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="02-06-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-        <TableRow android:background="#25FDE6C3">
+                <ImageView
+                    android:id="@+id/btnDetalle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="54"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+            </TableRow>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="C. Universitaria"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+            <TableRow android:background="#25FDE6C3">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="28-05-2021"
-                android:textColor="#000000"
-                android:textSize="12sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="55"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-            <ImageView
-                android:id="@+id/btnDetalle5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="27dp"
-                app:srcCompat="@mipmap/ver" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-        </TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="01-06-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
 
-    </TableLayout>
+                <ImageView
+                    android:id="@+id/btnDetalle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
+
+            </TableRow>
+
+            <TableRow android:background="#25FDE6C3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="54"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="28-05-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btnDetalle5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
+
+            </TableRow>
+
+            <TableRow android:background="#25FDE6C3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="53"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="27-05-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btnDetalle6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
+
+            </TableRow>
+
+            <TableRow android:background="#25FDE6C3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="52"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Cangallo"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="26-05-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btnDetalle7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
+
+            </TableRow>
+
+            <TableRow android:background="#25FDE6C3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="51"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="24-05-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btnDetalle8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
+
+            </TableRow>
+
+            <TableRow android:background="#25FDE6C3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="50"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="22-05-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btnDetalle9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
+
+            </TableRow>
+
+            <TableRow android:background="#25FDE6C3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="49"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="C. Universitaria"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="20-05-2021"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btnDetalle10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="27dp"
+                    app:srcCompat="@mipmap/ver" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
