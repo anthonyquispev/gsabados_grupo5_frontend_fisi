@@ -8,7 +8,12 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 public class PantallaInicio extends AppCompatActivity {
+
+    //Para implementar Analytics
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     //para navegar a los modulos
     private ImageButton btnReservar;
@@ -23,6 +28,7 @@ public class PantallaInicio extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_inicio);
 
@@ -32,6 +38,11 @@ public class PantallaInicio extends AppCompatActivity {
         btnVerDetalle1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Probando envío de eventos
+                Bundle bundle = new Bundle();
+                bundle.putString("TEST_MODULE_NAME", "Informacion nutricional");
+                bundle.putString("TEST_ITEM_ID", "001002");
+                mFirebaseAnalytics.logEvent("TEST_MODULE_SELECTION", bundle);
                 //abriendo modal de Inf. nutricional
                 startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
             }
