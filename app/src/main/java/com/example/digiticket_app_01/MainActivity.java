@@ -1,20 +1,12 @@
 package com.example.digiticket_app_01;
 
 import androidx.appcompat.app.AppCompatActivity;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.functions.Consumer;
-import io.reactivex.schedulers.Schedulers;
-import retrofit2.Retrofit;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.digiticket_app_01.Retrofit.IMyService;
-import com.example.digiticket_app_01.Retrofit.RetrofitClient;
 
 public class MainActivity extends AppCompatActivity {
 
