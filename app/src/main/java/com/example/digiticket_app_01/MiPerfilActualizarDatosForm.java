@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MiPerfilActualizarDatosForm extends AppCompatActivity {
 
     private Button btnCancelar;
@@ -18,6 +20,9 @@ public class MiPerfilActualizarDatosForm extends AppCompatActivity {
     private Button btnActualizar;
     //Variables para el menu dropdown
     private AutoCompleteTextView autoCompleteTextView;
+
+    //para retroceder
+    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +67,17 @@ public class MiPerfilActualizarDatosForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //regresando a vista Mi Perfil principal
+                startActivity(new Intent(MiPerfilActualizarDatosForm.this, MiPerfilPrincipal.class));
+            }
+        });
+
+        //para retroceder
+        btnRetroceder = findViewById(R.id.floatingActionButton3);
+        //creando listener
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //iniciando el modal
                 startActivity(new Intent(MiPerfilActualizarDatosForm.this, MiPerfilPrincipal.class));
             }
         });

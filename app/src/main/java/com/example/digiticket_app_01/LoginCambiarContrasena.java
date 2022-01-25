@@ -9,10 +9,9 @@ import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class ReservaResumenReserva extends AppCompatActivity {
+public class LoginCambiarContrasena extends AppCompatActivity {
 
-    //variables para el modal
-    private Button btnReservar;
+    private Button btnGuardarContrasena;
 
     //para retroceder
     private FloatingActionButton btnRetroceder;
@@ -20,27 +19,25 @@ public class ReservaResumenReserva extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reserva_resumen_reserva);
+        setContentView(R.layout.activity_login_cambiar_contrasena);
 
-        //abriendo modal para confirmar reserva
-        btnReservar = findViewById(R.id.btnInicioFinReserva);
-        //creando listener
-        btnReservar.setOnClickListener(new View.OnClickListener() {
+        //para guardar la contraseña actualizada
+        btnGuardarContrasena = findViewById(R.id.btnGuardarContrasena);
+        btnGuardarContrasena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //iniciando el modal
-                startActivity(new Intent(ReservaResumenReserva.this, ReservaModalConfirmacion.class));
+                startActivity(new Intent(LoginCambiarContrasena.this, LoginModalContrasenaActualizada.class));
             }
         });
 
         //para retroceder
-        btnRetroceder = findViewById(R.id.floatingActionButton2);
+        btnRetroceder = findViewById(R.id.fltActionButton9);
         //creando listener
         btnRetroceder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //iniciando el modal
-                startActivity(new Intent(ReservaResumenReserva.this, ReservaEscogerPlato.class));
+                startActivity(new Intent(LoginCambiarContrasena.this, LoginRecuperarContrasena.class));
             }
         });
     }

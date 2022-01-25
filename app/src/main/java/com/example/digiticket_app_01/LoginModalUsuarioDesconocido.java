@@ -8,14 +8,14 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
-public class ModalReservaConfirmada extends AppCompatActivity {
+public class LoginModalUsuarioDesconocido extends AppCompatActivity {
 
     private Button btnAceptar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modal_reserva_confirmada);
+        setContentView(R.layout.activity_login_modal_usuario_desconocido);
 
         //obteniendo objeto Pantalla
         DisplayMetrics medidasVentana = new DisplayMetrics();
@@ -26,16 +26,14 @@ public class ModalReservaConfirmada extends AppCompatActivity {
         //restringiendo el tamaño del modal
         getWindow().setLayout((int) (width*0.75), (int) (height*0.30));
 
-
-
         //linkeando el boton del modal con el activity Mostrar Ticket
-        btnAceptar = findViewById(R.id.btnAceptarModal2);
+        btnAceptar = findViewById(R.id.btnAceptarModalUsuarioDesconocido);
         //creando listener
         btnAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //iniciando el activity
-                startActivity(new Intent(ModalReservaConfirmada.this, ReservaMostrarTicket.class));
+                startActivity(new Intent(LoginModalUsuarioDesconocido.this, RegistroUsuarioCambiarContrasena.class));
             }
         });
     }

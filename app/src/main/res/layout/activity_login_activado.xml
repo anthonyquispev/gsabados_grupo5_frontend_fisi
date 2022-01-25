@@ -66,7 +66,7 @@
             android:id="@+id/textEditInputContraseñaLoginActivado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:inputType="textPassword"
             tools:ignore="TouchTargetSizeCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -101,7 +101,8 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView125"
+        android:id="@+id/txtOlvidasteContrasena"
+        android:enabled="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -131,7 +132,7 @@
         app:layout_constraintVertical_bias="0.865" />
 
     <TextView
-        android:id="@+id/textView129"
+        android:id="@+id/txtxIngresarCuentaDiferente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingresa con una cuenta diferente"

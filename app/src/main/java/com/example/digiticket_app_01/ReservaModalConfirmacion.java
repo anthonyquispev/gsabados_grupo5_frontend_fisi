@@ -8,16 +8,16 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 
-public class MiPerfilModalCerrarSesion extends AppCompatActivity {
+public class ReservaModalConfirmacion extends AppCompatActivity {
 
     //variables para el modal
-    private TextView txtCancelar;
-    private TextView txtCerrarSesion;
+    private TextView txtRegresar;
+    private TextView txtConfirmar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mi_perfil_modal_cerrar_sesion);
+        setContentView(R.layout.activity_reserva_modal_confirmacion);
 
         //obteniendo objeto Pantalla
         DisplayMetrics medidasVentana = new DisplayMetrics();
@@ -28,26 +28,27 @@ public class MiPerfilModalCerrarSesion extends AppCompatActivity {
         //restringiendo el tamaño del modal
         getWindow().setLayout((int) (width*0.75), (int) (height*0.30));
 
-        //Linkeando el boton Cancelar
-        txtCancelar = findViewById(R.id.txtCancelarModal4);
+
+        //linkeando el modal con el boton
+        txtConfirmar = findViewById(R.id.txtConfirmarModal1);
         //creando listener
-        txtCancelar.setOnClickListener(new View.OnClickListener() {
+        txtConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //cerrando el modal actual
                 finish();
+                //iniciando el nuevo modal
+                startActivity(new Intent(ReservaModalConfirmacion.this, ReservaModalReservaConfirmada.class));
             }
         });
 
-        //Linkeando el boton Cerrar Sesion
-        txtCerrarSesion = findViewById(R.id.txtCerrarSesionModal4);
+        txtRegresar = findViewById(R.id.txtRegresarModal1);
         //creando listener
-        txtCerrarSesion.setOnClickListener(new View.OnClickListener() {
+        txtRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //cerrando el modal actual
                 finish();
-                startActivity(new Intent(MiPerfilModalCerrarSesion.this, LoginActivado.class));
             }
         });
     }

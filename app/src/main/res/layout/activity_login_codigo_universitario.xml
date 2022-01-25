@@ -37,11 +37,11 @@
         app:startIconDrawable="@drawable/user">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textEditInputCorreo"
+            android:id="@+id/textEditInputCodigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
@@ -86,9 +86,10 @@
         app:layout_constraintVertical_bias="0.814" />
 
     <TextView
-        android:id="@+id/enlaceActivar"
+        android:id="@+id/enlaceActivarCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:text="Actívala aquí"
         android:textColor="#FF5C00"
         android:textSize="15sp"
