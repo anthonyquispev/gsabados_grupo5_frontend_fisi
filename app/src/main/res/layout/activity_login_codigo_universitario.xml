@@ -89,6 +89,7 @@
         android:id="@+id/enlaceActivarCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:text="Actívala aquí"
         android:textColor="#FF5C00"
         android:textSize="15sp"
