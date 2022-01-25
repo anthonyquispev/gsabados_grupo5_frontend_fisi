@@ -83,14 +83,23 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
                             // Se verifica si es que la cuenta está activada o no
                             try {
                                 JSONObject jsonObject = new JSONObject(response.get(0).toString());
+                                String _id = jsonObject.getString("_id");
                                 boolean state_account = Boolean.parseBoolean(jsonObject.getString("state_account"));
                                 // Cuenta activada
                                 if (state_account) {
-                                    startActivity(new Intent(LoginCodigoUniversitario.this, LoginActivado.class));
+                                    Intent i = new Intent(LoginCodigoUniversitario.this, LoginActivado.class);
+                                    i.putExtra("user_id", user_id);
+                                    startActivity(i);
+//                                    startActivity(new Intent(LoginCodigoUniversitario.this, LoginActivado.class));
                                 }
                                 // Cuenta no activada
                                 else {
-                                    startActivity(new Intent(LoginCodigoUniversitario.this, RegistroUsuarioForm.class));
+//                                    Intent i = new Intent(LoginCodigoUniversitario.this, RegistroUsuarioForm.class);
+//                                    i.putExtra("_id",_id);
+//                                    startActivity(i);
+                                    Intent i = new Intent(LoginCodigoUniversitario.this, RegistroUsuarioCambiarContrasena.class);
+                                    i.putExtra("_id", _id);
+                                    startActivity(i);
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
