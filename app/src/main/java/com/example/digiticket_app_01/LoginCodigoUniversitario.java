@@ -90,13 +90,9 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
                                     Intent i = new Intent(LoginCodigoUniversitario.this, LoginActivado.class);
                                     i.putExtra("user_id", user_id);
                                     startActivity(i);
-//                                    startActivity(new Intent(LoginCodigoUniversitario.this, LoginActivado.class));
                                 }
                                 // Cuenta no activada
                                 else {
-//                                    Intent i = new Intent(LoginCodigoUniversitario.this, RegistroUsuarioForm.class);
-//                                    i.putExtra("_id",_id);
-//                                    startActivity(i);
                                     Intent i = new Intent(LoginCodigoUniversitario.this, RegistroUsuarioCambiarContrasena.class);
                                     i.putExtra("_id", _id);
                                     startActivity(i);
@@ -105,7 +101,6 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         }
-//                        Toast.makeText(LoginCodigoUniversitario.this, response.toString(), Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener() {

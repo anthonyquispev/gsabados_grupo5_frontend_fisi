@@ -109,7 +109,13 @@ public class RegistroUsuarioForm extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(RegistroUsuarioForm.this, response, Toast.LENGTH_SHORT).show();
+                        // Dirigiendo hacia la pantalla de Inicio
+                        if (response.equals("\"Alumno actualizado\"")) {
+                            Toast.makeText(RegistroUsuarioForm.this, "Cuenta activada", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegistroUsuarioForm.this, PantallaInicio.class));
+                        } else {
+                            Toast.makeText(RegistroUsuarioForm.this, "Error", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 },
                 new Response.ErrorListener() {
