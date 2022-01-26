@@ -1,7 +1,9 @@
 package com.example.digiticket_app_01;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +16,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.firebase.messaging.FirebaseMessaging;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
@@ -38,9 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Log.i("TAG","Prueba del Log");
+        Log.i("TAG",FirebaseMessaging.getInstance().getToken().toString());
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         et_cod_usuario = findViewById(R.id.et_cod_usuario);
         et_password = findViewById(R.id.et_password);
         et_nombres = findViewById(R.id.et_nombres);
