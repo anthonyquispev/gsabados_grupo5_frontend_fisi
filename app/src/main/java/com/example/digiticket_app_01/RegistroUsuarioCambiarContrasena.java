@@ -88,6 +88,7 @@ public class RegistroUsuarioCambiarContrasena extends AppCompatActivity {
                             if (nuevoPass.equals(confirmarPass)) {
                                 Intent i = new Intent(RegistroUsuarioCambiarContrasena.this, RegistroUsuarioForm.class);
                                 i.putExtra("_id", _id);
+                                i.putExtra("user_id", user_id);
                                 i.putExtra("nuevoPass", nuevoPass);
                                 startActivity(i);
                             } else {

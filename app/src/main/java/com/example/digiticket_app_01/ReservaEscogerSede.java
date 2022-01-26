@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -27,6 +28,8 @@ public class ReservaEscogerSede extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva_escoger_sede);
 
+        String user_id = getIntent().getStringExtra("user_id");
+
         //txt
         txtSedeCiudadUni = findViewById(R.id.textViewCU);
         txtSedeCangallo = findViewById(R.id.textViewSedeCangallo);
@@ -43,7 +46,12 @@ public class ReservaEscogerSede extends AppCompatActivity {
                 //btnCiudadUniversitaria.setBackgroundResource();
                 txtSedeCiudadUni.setTextColor(getResources().getColor(R.color.white));
                 //iniciando el modal
-                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
+                String sede = "Ciudad Universitaria";
+                Intent i = new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("sede", sede);
+                startActivity(i);
+//                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
             }
         });
 
@@ -58,7 +66,12 @@ public class ReservaEscogerSede extends AppCompatActivity {
                 btnCangallo.setBackground(getDrawable(R.drawable.btn_aceptar_sede));
                 txtSedeCangallo.setTextColor(getResources().getColor(R.color.white));
                 //iniciando el modal
-                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
+                String sede = "Cangallo";
+                Intent i = new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("sede", sede);
+                startActivity(i);
+//                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
             }
         });
 

@@ -80,7 +80,9 @@ public class LoginActivado extends AppCompatActivity {
                     public void onResponse(String response) {
                         // PASSWORD CORRECTO
                         if (response.equals("\"Credenciales correctas\"")) {
-                            startActivity(new Intent(LoginActivado.this, PantallaInicio.class));
+                            Intent i = new Intent(LoginActivado.this, PantallaInicio.class);
+                            i.putExtra("user_id", user_id);
+                            startActivity(i);
                         }
                         // PASSWORD INCORRECTO
                         else {

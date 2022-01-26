@@ -51,6 +51,7 @@ public class RegistroUsuarioForm extends AppCompatActivity {
         queue = Volley.newRequestQueue(RegistroUsuarioForm.this);
 
         String _id = getIntent().getStringExtra("_id");
+        String user_id = getIntent().getStringExtra("user_id");
         String nuevoPass = getIntent().getStringExtra("nuevoPass");
 
         et_correoPersonal = findViewById(R.id.textEditInputCorreoRegistro);
@@ -86,8 +87,7 @@ public class RegistroUsuarioForm extends AppCompatActivity {
                 String correo_personal = et_correoPersonal.getText().toString();
                 String telefono_personal = et_telefonoPersonal.getText().toString();
                 String sede_preferencia = autoCompleteTextView.getText().toString();
-
-                updateAlumno(_id, nuevoPass, correo_personal, telefono_personal, sede_preferencia);
+                updateAlumno(_id, nuevoPass, correo_personal, telefono_personal, sede_preferencia, user_id);
             }
         });
 
@@ -103,7 +103,7 @@ public class RegistroUsuarioForm extends AppCompatActivity {
         });
     }
 
-    private void updateAlumno(String _id, String nuevoPass,String correo_personal, String telefono_personal, String sede_preferencia) {
+    private void updateAlumno(String _id, String nuevoPass,String correo_personal, String telefono_personal, String sede_preferencia, String user_id) {
         String urlAlumnos = "https://micro-usuarios.herokuapp.com/api/alumnos/" + _id;
         StringRequest request = new StringRequest(Request.Method.PUT, urlAlumnos,
                 new Response.Listener<String>() {
@@ -112,7 +112,10 @@ public class RegistroUsuarioForm extends AppCompatActivity {
                         // Dirigiendo hacia la pantalla de Inicio
                         if (response.equals("\"Alumno actualizado\"")) {
                             Toast.makeText(RegistroUsuarioForm.this, "Cuenta activada", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(RegistroUsuarioForm.this, PantallaInicio.class));
+                            Intent i = new Intent(RegistroUsuarioForm.this, PantallaInicio.class);
+//                            i.putExtra("_id", _id);
+                            i.putExtra("user_id", user_id);
+                            startActivity(i);
                         } else {
                             Toast.makeText(RegistroUsuarioForm.this, "Error", Toast.LENGTH_SHORT).show();
                         }

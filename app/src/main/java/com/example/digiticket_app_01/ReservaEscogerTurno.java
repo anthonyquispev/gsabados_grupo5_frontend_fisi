@@ -38,6 +38,9 @@ public class ReservaEscogerTurno extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva_escoger_turno);
 
+        String sede = getIntent().getStringExtra("sede");
+        String user_id = getIntent().getStringExtra("user_id");
+
         //txt
         txtTurno1 = findViewById(R.id.txtTurno1);
         txtTurno2 = findViewById(R.id.txtTurno2);
@@ -62,7 +65,13 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT1.setTextColor(getResources().getColor(R.color.white));
                 txtTurno1.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                String turno_id = "61ea130ed52b2431a47d2311";
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", turno_id);
+                startActivity(i);
+//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -78,7 +87,13 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT2.setTextColor(getResources().getColor(R.color.white));
                 txtTurno2.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                String turno_id = "61ea130ed52b2431a47d2312";
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", turno_id);
+                startActivity(i);
+//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -95,7 +110,13 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT3.setTextColor(getResources().getColor(R.color.white));
                 txtTurno3.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                String turno_id = "61ea130ed52b2431a47d2313";
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", turno_id);
+                startActivity(i);
+//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -111,7 +132,13 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT4.setTextColor(getResources().getColor(R.color.white));
                 txtTurno4.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                String turno_id = "61ea130ed52b2431a47d2314";
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", turno_id);
+                startActivity(i);
+//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -127,7 +154,13 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT5.setTextColor(getResources().getColor(R.color.white));
                 txtTurno5.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                String turno_id = "61ea130ed52b2431a47d2315";
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", turno_id);
+                startActivity(i);
+//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 

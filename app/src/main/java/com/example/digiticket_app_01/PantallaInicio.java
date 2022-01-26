@@ -26,6 +26,8 @@ public class PantallaInicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_inicio);
 
+        String user_id = getIntent().getStringExtra("user_id");
+
         //Ver informacion nutricional 1
         btnVerDetalle1 = findViewById(R.id.btnVerDetallesHome1);
         //creando listener
@@ -77,7 +79,10 @@ public class PantallaInicio extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //navegando a Reservar Ticket
-                startActivity(new Intent(PantallaInicio.this, ReservaEscogerSede.class));
+//                startActivity(new Intent(PantallaInicio.this, ReservaEscogerSede.class));
+                Intent i = new Intent(PantallaInicio.this, ReservaEscogerSede.class);
+                i.putExtra("user_id", user_id);
+                startActivity(i);
             }
         });
 
