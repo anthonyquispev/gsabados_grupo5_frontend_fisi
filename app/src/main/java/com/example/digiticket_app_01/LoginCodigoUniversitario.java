@@ -31,14 +31,10 @@ import java.io.UnsupportedEncodingException;
 
 public class LoginCodigoUniversitario extends AppCompatActivity {
 
-    RequestQueue queue;
-
-    String urlAlumnos = "https://micro-usuarios.herokuapp.com/api/alumnos";
-    String urlLogin = "https://micro-usuarios.herokuapp.com/api/alumnos/login";
-
     private Button btnSiguienteLoginCod;
     private TextView btnActivarCuenta;
     private EditText et_inputCodigo;
+    RequestQueue queue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,22 +80,17 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
                             // Se verifica si es que la cuenta está activada o no
                             try {
                                 JSONObject jsonObject = new JSONObject(response.get(0).toString());
-//                                String _id = jsonObject.getString("_id");
                                 Sistema._id = jsonObject.getString("_id");
                                 Sistema.nombres = jsonObject.getString("nombres");
                                 Sistema.apellidos = jsonObject.getString("apellidos");
+                                Sistema.user_id = user_id;
                                 boolean state_account = Boolean.parseBoolean(jsonObject.getString("state_account"));
                                 // Cuenta activada
                                 if (state_account) {
-                                    Intent i = new Intent(LoginCodigoUniversitario.this, LoginActivado.class);
-                                    i.putExtra("user_id", user_id);
-                                    startActivity(i);
+                                    startActivity(new Intent(LoginCodigoUniversitario.this, LoginActivado.class));
                                 }
                                 // Cuenta no activada
                                 else {
-//                                    Intent i = new Intent(LoginCodigoUniversitario.this, RegistroUsuarioCambiarContrasena.class);
-//                                    i.putExtra("_id", _id);
-//                                    startActivity(i);
                                     startActivity(new Intent(LoginCodigoUniversitario.this, RegistroUsuarioCambiarContrasena.class));
                                 }
                             } catch (JSONException e) {
@@ -116,5 +107,4 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
         );
         queue.add(jsonArrayRequest);
     }
-
 }

@@ -39,12 +39,13 @@ public class RegistroUsuarioCambiarContrasena extends AppCompatActivity {
         setContentView(R.layout.activity_registro_usuario_cambiar_contrasena);
 
         queue = Volley.newRequestQueue(RegistroUsuarioCambiarContrasena.this);
-        String _id = Sistema._id;
 
         et_codigoUniversitario = findViewById(R.id.textEditInputCodigoRegistroCambiarContrasena);
         et_contraseñaCorreoInstitucional = findViewById(R.id.textEditInputContrasenaInsRegistroCambiarContrasena);
         et_nuevoPass = findViewById(R.id.textEditInputNuevaContrasena);
         et_confirmarPass = findViewById(R.id.textEditInputRepetirContrasena);
+
+        et_codigoUniversitario.setText(Sistema.user_id);
 
         //navegando hacia el siguiente formulario de registro
         btnSiguiente = findViewById(R.id.btnSiguienteCambiarContrasena);
@@ -54,8 +55,7 @@ public class RegistroUsuarioCambiarContrasena extends AppCompatActivity {
             public void onClick(View view) {
                 //navegando al formulario de registro
 //                startActivity(new Intent(RegistroUsuarioCambiarContrasena.this, RegistroUsuarioForm.class));
-                validarDatos(_id,
-                        et_codigoUniversitario.getText().toString(),
+                validarDatos(et_codigoUniversitario.getText().toString(),
                         et_contraseñaCorreoInstitucional.getText().toString(),
                         et_nuevoPass.getText().toString(),
                         et_confirmarPass.getText().toString());
@@ -74,7 +74,7 @@ public class RegistroUsuarioCambiarContrasena extends AppCompatActivity {
         });
     }
 
-    private void validarDatos(String _id, String user_id, String password, String nuevoPass, String confirmarPass) {
+    private void validarDatos(String user_id, String password, String nuevoPass, String confirmarPass) {
         String urlLogin = "https://micro-usuarios.herokuapp.com/api/alumnos/login";
         StringRequest request = new StringRequest(Request.Method.POST, urlLogin,
                 new Response.Listener<String>() {
@@ -88,7 +88,6 @@ public class RegistroUsuarioCambiarContrasena extends AppCompatActivity {
                         else {
                             if (nuevoPass.equals(confirmarPass)) {
                                 Intent i = new Intent(RegistroUsuarioCambiarContrasena.this, RegistroUsuarioForm.class);
-                                i.putExtra("user_id", user_id);
                                 i.putExtra("nuevoPass", nuevoPass);
                                 startActivity(i);
                             } else {

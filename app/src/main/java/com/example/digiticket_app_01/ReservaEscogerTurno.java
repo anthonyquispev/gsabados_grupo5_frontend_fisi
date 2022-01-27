@@ -40,7 +40,6 @@ public class ReservaEscogerTurno extends AppCompatActivity {
         setContentView(R.layout.activity_reserva_escoger_turno);
 
         String sede = getIntent().getStringExtra("sede");
-        String user_id = getIntent().getStringExtra("user_id");
 
         //txt
         txtTurno1 = findViewById(R.id.txtTurno1);
@@ -67,13 +66,11 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTurno1.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
                 Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 i.putExtra("turno_id", Sistema.turno_id_1);
                 i.putExtra("turno_numero", Sistema.turno_numero_1);
                 i.putExtra("turno_horario", Sistema.turno_horario_1);
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -90,13 +87,11 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTurno2.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
                 Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 i.putExtra("turno_id", Sistema.turno_id_2);
                 i.putExtra("turno_numero", Sistema.turno_numero_2);
                 i.putExtra("turno_horario", Sistema.turno_horario_2);
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -114,13 +109,11 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTurno3.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
                 Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 i.putExtra("turno_id", Sistema.turno_id_3);
                 i.putExtra("turno_numero", Sistema.turno_numero_3);
                 i.putExtra("turno_horario", Sistema.turno_horario_3);
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -137,13 +130,11 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTurno4.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
                 Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 i.putExtra("turno_id", Sistema.turno_id_4);
                 i.putExtra("turno_numero", Sistema.turno_numero_4);
                 i.putExtra("turno_horario", Sistema.turno_horario_4);
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 
@@ -160,13 +151,11 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTurno5.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
                 Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 i.putExtra("turno_id", Sistema.turno_id_5);
                 i.putExtra("turno_numero", Sistema.turno_numero_5);
                 i.putExtra("turno_horario", Sistema.turno_horario_5);
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
             }
         });
 

@@ -37,7 +37,6 @@ public class ReservaEscogerPlato extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva_escoger_plato);
 
-        String user_id = getIntent().getStringExtra("user_id");
         String sede = getIntent().getStringExtra("sede");
         String turno_id = getIntent().getStringExtra("turno_id");
         String turno_numero = getIntent().getStringExtra("turno_numero");
@@ -69,7 +68,6 @@ public class ReservaEscogerPlato extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ReservaEscogerPlato.this, ReservaResumenReserva.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 i.putExtra("nivel", nivel);
                 i.putExtra("turno_id", turno_id);
@@ -89,7 +87,6 @@ public class ReservaEscogerPlato extends AppCompatActivity {
                     i.putExtra("refresco", Sistema.comida_id_4);
                 }
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerPlato.this, ReservaResumenReserva.class));
             }
         });
 
@@ -119,14 +116,12 @@ public class ReservaEscogerPlato extends AppCompatActivity {
                 btnNivel1.setTextColor(getResources().getColor(R.color.white));
                 //cambiar fondo
                 btnNivel1.setBackgroundTintList(ContextCompat.getColorStateList(ReservaEscogerPlato.this, R.color.orange));
-                //btnNivel1.setBackgroundResource();
 
                 //Cambiando boton nivel 2
                 //cambiando color de texto
                 btnNivel2.setTextColor(getResources().getColor(R.color.gris));
                 //cambiar fondo
                 btnNivel2.setBackgroundTintList(ContextCompat.getColorStateList(ReservaEscogerPlato.this, R.color.white));
-                //btnNivel2.setBackgroundResource();
                 nivel = "1";
             }
         });

@@ -55,7 +55,7 @@ public class ReservaResumenReserva extends AppCompatActivity {
         tv_turno_horario = findViewById(R.id.txtTurnoRMostrar);
 
         // Lectura de Intent
-        String user_id = getIntent().getStringExtra("user_id");
+        String user_id = Sistema.user_id;
         String sede = getIntent().getStringExtra("sede");
         String nivel = getIntent().getStringExtra("nivel");
         String turno_id = getIntent().getStringExtra("turno_id");
@@ -96,7 +96,6 @@ public class ReservaResumenReserva extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
 //                startActivity(new Intent(ReservaResumenReserva.this, ReservaModalConfirmacion.class));
-
                 registrarReserva(user_id, Sistema.servicio_id, sede, nivel, turno_id, jsonObjectcomidas);
             }
         });

@@ -28,8 +28,6 @@ public class ReservaEscogerSede extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva_escoger_sede);
 
-        String user_id = getIntent().getStringExtra("user_id");
-
         //txt
         txtSedeCiudadUni = findViewById(R.id.textViewCU);
         txtSedeCangallo = findViewById(R.id.textViewSedeCangallo);
@@ -43,15 +41,12 @@ public class ReservaEscogerSede extends AppCompatActivity {
             public void onClick(View view) {
                 //cambiando fondo y texto
                 btnCiudadUniversitaria.setBackground(getDrawable(R.drawable.btn_aceptar_sede));
-                //btnCiudadUniversitaria.setBackgroundResource();
                 txtSedeCiudadUni.setTextColor(getResources().getColor(R.color.white));
                 //iniciando el modal
                 String sede = "Ciudad Universitaria";
                 Intent i = new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
             }
         });
 
@@ -68,10 +63,8 @@ public class ReservaEscogerSede extends AppCompatActivity {
                 //iniciando el modal
                 String sede = "Cangallo";
                 Intent i = new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class);
-                i.putExtra("user_id", user_id);
                 i.putExtra("sede", sede);
                 startActivity(i);
-//                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
             }
         });
 

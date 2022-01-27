@@ -31,7 +31,6 @@ public class LoginActivado extends AppCompatActivity {
     private Button btnIngresar;
     private TextView btnRecuperarContrasena;
     private TextView txtxIngresarCuentaDiferente;
-    private TextView btnI;
     private EditText et_password;
     private TextView nombresApellidos;
 
@@ -43,7 +42,7 @@ public class LoginActivado extends AppCompatActivity {
         setContentView(R.layout.activity_login_activado);
         queue = Volley.newRequestQueue(LoginActivado.this);
 
-        String user_id = getIntent().getStringExtra("user_id");
+        String user_id = Sistema.user_id;
         Toast.makeText(LoginActivado.this, user_id, Toast.LENGTH_SHORT).show();
 
         nombresApellidos = findViewById(R.id.txtNombreUsuarioLoginActivado);
@@ -85,9 +84,7 @@ public class LoginActivado extends AppCompatActivity {
                     public void onResponse(String response) {
                         // PASSWORD CORRECTO
                         if (response.equals("\"Credenciales correctas\"")) {
-                            Intent i = new Intent(LoginActivado.this, PantallaInicio.class);
-                            i.putExtra("user_id", user_id);
-                            startActivity(i);
+                            startActivity(new Intent(LoginActivado.this, PantallaInicio.class));
                         }
                         // PASSWORD INCORRECTO
                         else {
