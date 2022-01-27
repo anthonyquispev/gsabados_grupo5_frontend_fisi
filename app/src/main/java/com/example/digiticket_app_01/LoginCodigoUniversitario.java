@@ -20,6 +20,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONArray;
@@ -83,7 +84,10 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
                             // Se verifica si es que la cuenta está activada o no
                             try {
                                 JSONObject jsonObject = new JSONObject(response.get(0).toString());
-                                String _id = jsonObject.getString("_id");
+//                                String _id = jsonObject.getString("_id");
+                                Sistema._id = jsonObject.getString("_id");
+                                Sistema.nombres = jsonObject.getString("nombres");
+                                Sistema.apellidos = jsonObject.getString("apellidos");
                                 boolean state_account = Boolean.parseBoolean(jsonObject.getString("state_account"));
                                 // Cuenta activada
                                 if (state_account) {
@@ -93,9 +97,10 @@ public class LoginCodigoUniversitario extends AppCompatActivity {
                                 }
                                 // Cuenta no activada
                                 else {
-                                    Intent i = new Intent(LoginCodigoUniversitario.this, RegistroUsuarioCambiarContrasena.class);
-                                    i.putExtra("_id", _id);
-                                    startActivity(i);
+//                                    Intent i = new Intent(LoginCodigoUniversitario.this, RegistroUsuarioCambiarContrasena.class);
+//                                    i.putExtra("_id", _id);
+//                                    startActivity(i);
+                                    startActivity(new Intent(LoginCodigoUniversitario.this, RegistroUsuarioCambiarContrasena.class));
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();

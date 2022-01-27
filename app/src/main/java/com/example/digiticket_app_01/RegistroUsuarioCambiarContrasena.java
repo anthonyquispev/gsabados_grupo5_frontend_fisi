@@ -17,6 +17,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
@@ -38,7 +39,7 @@ public class RegistroUsuarioCambiarContrasena extends AppCompatActivity {
         setContentView(R.layout.activity_registro_usuario_cambiar_contrasena);
 
         queue = Volley.newRequestQueue(RegistroUsuarioCambiarContrasena.this);
-        String _id = getIntent().getStringExtra("_id");
+        String _id = Sistema._id;
 
         et_codigoUniversitario = findViewById(R.id.textEditInputCodigoRegistroCambiarContrasena);
         et_contraseñaCorreoInstitucional = findViewById(R.id.textEditInputContrasenaInsRegistroCambiarContrasena);
@@ -87,7 +88,6 @@ public class RegistroUsuarioCambiarContrasena extends AppCompatActivity {
                         else {
                             if (nuevoPass.equals(confirmarPass)) {
                                 Intent i = new Intent(RegistroUsuarioCambiarContrasena.this, RegistroUsuarioForm.class);
-                                i.putExtra("_id", _id);
                                 i.putExtra("user_id", user_id);
                                 i.putExtra("nuevoPass", nuevoPass);
                                 startActivity(i);

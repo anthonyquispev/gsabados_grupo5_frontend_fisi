@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -26,6 +27,13 @@ import java.io.UnsupportedEncodingException;
 
 public class ReservaResumenReserva extends AppCompatActivity {
 
+    // Variables para mostrar en el resumen
+    private TextView tv_nombreCompleto;
+    private TextView tv_codigoUniversitario;
+    private TextView tv_servicio;
+    private TextView tv_sede;
+    private TextView tv_turno_horario;
+
     //variables para el modal
     private Button btnReservar;
 
@@ -40,11 +48,27 @@ public class ReservaResumenReserva extends AppCompatActivity {
         setContentView(R.layout.activity_reserva_resumen_reserva);
         queue = Volley.newRequestQueue(ReservaResumenReserva.this);
 
+        tv_nombreCompleto = findViewById(R.id.txtNombreApRMostrar);
+        tv_codigoUniversitario = findViewById(R.id.txtCodigoRMostrar);
+        tv_servicio = findViewById(R.id.txtServicioRMostrar);
+        tv_sede = findViewById(R.id.txtSedeRMostrar);
+        tv_turno_horario = findViewById(R.id.txtTurnoRMostrar);
+
         // Lectura de Intent
         String user_id = getIntent().getStringExtra("user_id");
         String sede = getIntent().getStringExtra("sede");
         String nivel = getIntent().getStringExtra("nivel");
         String turno_id = getIntent().getStringExtra("turno_id");
+        String turno_numero = getIntent().getStringExtra("turno_numero");
+        String turno_horario = getIntent().getStringExtra("turno_horario");
+
+        // Llenado de datos
+        tv_nombreCompleto.setText(Sistema.nombres + " " + Sistema.apellidos);
+        tv_codigoUniversitario.setText(user_id);
+        tv_servicio.setText(Sistema.servicio_nombre);
+        tv_sede.setText(sede);
+        tv_turno_horario.setText(turno_numero + " / " + turno_horario);
+
 
         JSONObject jsonObjectcomidas = new JSONObject();
         try {
@@ -98,6 +122,7 @@ public class ReservaResumenReserva extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Toast.makeText(ReservaResumenReserva.this, response, Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(ReservaResumenReserva.this, PantallaInicio.class));
                     }
                 },
                 new Response.ErrorListener() {

@@ -10,6 +10,7 @@ import android.widget.CheckBox;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
@@ -39,6 +40,8 @@ public class ReservaEscogerPlato extends AppCompatActivity {
         String user_id = getIntent().getStringExtra("user_id");
         String sede = getIntent().getStringExtra("sede");
         String turno_id = getIntent().getStringExtra("turno_id");
+        String turno_numero = getIntent().getStringExtra("turno_numero");
+        String turno_horario = getIntent().getStringExtra("turno_horario");
 
         cbTodos = findViewById(R.id.checkBox);
         cbEntrada = findViewById(R.id.checkBox2);
@@ -70,18 +73,20 @@ public class ReservaEscogerPlato extends AppCompatActivity {
                 i.putExtra("sede", sede);
                 i.putExtra("nivel", nivel);
                 i.putExtra("turno_id", turno_id);
+                i.putExtra("turno_numero", turno_numero);
+                i.putExtra("turno_horario", turno_horario);
                 //iniciando el modal
                 if (cbEntrada.isChecked() == true) {
-                    i.putExtra("entrada", "61f0fb62840ead7e039484c1");
+                    i.putExtra("entrada", Sistema.comida_id_1);
                 }
                 if (cbSegundo.isChecked() == true) {
-                    i.putExtra("segundo", "61f0fb62840ead7e039484c2");
+                    i.putExtra("segundo", Sistema.comida_id_2);
                 }
                 if (cbPostre.isChecked() == true) {
-                    i.putExtra("postre", "61f0fb62840ead7e039484c3");
+                    i.putExtra("postre", Sistema.comida_id_3);
                 }
                 if (cbRefresco.isChecked() == true) {
-                    i.putExtra("refresco", "61f0fb62840ead7e039484c4");
+                    i.putExtra("refresco", Sistema.comida_id_4);
                 }
                 startActivity(i);
 //                startActivity(new Intent(ReservaEscogerPlato.this, ReservaResumenReserva.class));
