@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "425668561881",
+    "project_id": "digiticket-ogbu",
+    "storage_bucket": "digiticket-ogbu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425668561881:android:d2e54d78810934d75567c8",
+        "android_client_info": {
+          "package_name": "com.example.digiticket_app_01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425668561881-2gfkm7njua5h5rj32ivsmfu3t4p8grja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6AM7rG1ql8GGPMVZzCwxkicpCRU4KboA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425668561881-2gfkm7njua5h5rj32ivsmfu3t4p8grja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

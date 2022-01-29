@@ -24,12 +24,10 @@
 
         <activity
             android:name=".LoginCambiarContrasena"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".LoginRecuperarContrasena"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".RegistroUsuarioModalCancelarRegistro"
             android:exported="true"
@@ -40,64 +38,55 @@
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".RegistroUsuarioCambiarContrasena"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".LoginModalUsuarioDesconocido"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".ReservaEscogerSede"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".ReservaEscogerPlato"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".PantallaInicioModalInfoNutricional"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".PantallaInicio"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".RegistroUsuarioForm"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".LoginActivado"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".MiPerfilHistorialTicketsDetalle"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".MiPerfilHistorialTickets"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".MiPerfilVerHorarioSemanal"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
+
         <activity
             android:name=".MiPerfilEnviarComentariosModal"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".MiPerfilEnviarComentariosForm"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".MiPerfilActualizarDatosModal"
             android:exported="true"
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".MiPerfilActualizarDatosForm"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".MiPerfilModalCerrarSesion"
             android:exported="true"
@@ -112,12 +101,10 @@
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".MiPerfilPrincipal"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".ReservaEscogerTurno"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".ReservaModalReservaConfirmada"
             android:exported="true"
@@ -128,16 +115,14 @@
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".ReservaMostrarTicket"
-            android:exported="true">
-        </activity>
+
+            android:exported="true"/>
         <activity
             android:name=".ReservaResumenReserva"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
 
     </application>
 

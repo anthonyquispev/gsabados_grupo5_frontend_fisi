@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -84,6 +85,7 @@ public class LoginActivado extends AppCompatActivity {
                     public void onResponse(String response) {
                         // PASSWORD CORRECTO
                         if (response.equals("\"Credenciales correctas\"")) {
+                            Log.i("LOG","Prueba Log");
                             startActivity(new Intent(LoginActivado.this, PantallaInicio.class));
                         }
                         // PASSWORD INCORRECTO
