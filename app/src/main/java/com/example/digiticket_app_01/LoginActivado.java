@@ -20,6 +20,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.digiticket_app_01.configuracion.Sistema;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,8 +32,9 @@ public class LoginActivado extends AppCompatActivity {
     private Button btnIngresar;
     private TextView btnRecuperarContrasena;
     private TextView txtxIngresarCuentaDiferente;
-    private TextView btnI;
     private EditText et_password;
+    private TextView nombresApellidos;
+
     RequestQueue queue;
 
     @Override
@@ -41,9 +43,11 @@ public class LoginActivado extends AppCompatActivity {
         setContentView(R.layout.activity_login_activado);
         queue = Volley.newRequestQueue(LoginActivado.this);
 
-        String user_id = getIntent().getStringExtra("user_id");
+        String user_id = Sistema.user_id;
         Toast.makeText(LoginActivado.this, user_id, Toast.LENGTH_SHORT).show();
 
+        nombresApellidos = findViewById(R.id.txtNombreUsuarioLoginActivado);
+        nombresApellidos.setText(Sistema.nombres + " " + Sistema.apellidos);
         //para ingresar a la app
         et_password = findViewById(R.id.textEditInputContraseñaLoginActivado);
         btnIngresar = findViewById(R.id.btnIngresarLoginActivado);

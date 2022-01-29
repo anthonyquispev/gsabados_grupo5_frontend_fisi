@@ -33,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
     String urlLogin = "https://micro-usuarios.herokuapp.com/api/alumnos/login";
     String urlRegistrarAlumnos = "https://micro-usuarios.herokuapp.com/api/alumnos";
 
-    String urlAdministradores = "https://micro-usuarios.herokuapp.com/api/administradores";
-
     @Override
     protected void onStop() {
         super.onStop();

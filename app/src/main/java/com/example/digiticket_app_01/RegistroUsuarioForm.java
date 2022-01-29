@@ -20,6 +20,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
@@ -50,7 +51,7 @@ public class RegistroUsuarioForm extends AppCompatActivity {
 
         queue = Volley.newRequestQueue(RegistroUsuarioForm.this);
 
-        String _id = getIntent().getStringExtra("_id");
+        String _id = Sistema._id;
         String nuevoPass = getIntent().getStringExtra("nuevoPass");
 
         et_correoPersonal = findViewById(R.id.textEditInputCorreoRegistro);
@@ -86,7 +87,6 @@ public class RegistroUsuarioForm extends AppCompatActivity {
                 String correo_personal = et_correoPersonal.getText().toString();
                 String telefono_personal = et_telefonoPersonal.getText().toString();
                 String sede_preferencia = autoCompleteTextView.getText().toString();
-
                 updateAlumno(_id, nuevoPass, correo_personal, telefono_personal, sede_preferencia);
             }
         });

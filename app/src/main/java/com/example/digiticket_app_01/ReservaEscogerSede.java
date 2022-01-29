@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -40,10 +41,12 @@ public class ReservaEscogerSede extends AppCompatActivity {
             public void onClick(View view) {
                 //cambiando fondo y texto
                 btnCiudadUniversitaria.setBackground(getDrawable(R.drawable.btn_aceptar_sede));
-                //btnCiudadUniversitaria.setBackgroundResource();
                 txtSedeCiudadUni.setTextColor(getResources().getColor(R.color.white));
                 //iniciando el modal
-                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
+                String sede = "Ciudad Universitaria";
+                Intent i = new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class);
+                i.putExtra("sede", sede);
+                startActivity(i);
             }
         });
 
@@ -58,7 +61,10 @@ public class ReservaEscogerSede extends AppCompatActivity {
                 btnCangallo.setBackground(getDrawable(R.drawable.btn_aceptar_sede));
                 txtSedeCangallo.setTextColor(getResources().getColor(R.color.white));
                 //iniciando el modal
-                startActivity(new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class));
+                String sede = "Cangallo";
+                Intent i = new Intent(ReservaEscogerSede.this, ReservaEscogerTurno.class);
+                i.putExtra("sede", sede);
+                startActivity(i);
             }
         });
 

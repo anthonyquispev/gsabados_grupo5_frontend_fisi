@@ -72,6 +72,7 @@
         <activity
             android:name=".MiPerfilVerHorarioSemanal"
             android:exported="true"/>
+
         <activity
             android:name=".MiPerfilEnviarComentariosModal"
             android:exported="true"
@@ -114,6 +115,7 @@
             android:theme="@style/Theme.DIGITICKET_APP_01.Modal" />
         <activity
             android:name=".ReservaMostrarTicket"
+
             android:exported="true"/>
         <activity
             android:name=".ReservaResumenReserva"
@@ -121,8 +123,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"/>
-
-
 
     </application>
 

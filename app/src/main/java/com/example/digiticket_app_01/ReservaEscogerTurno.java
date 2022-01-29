@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ReservaEscogerTurno extends AppCompatActivity {
@@ -38,6 +39,8 @@ public class ReservaEscogerTurno extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva_escoger_turno);
 
+        String sede = getIntent().getStringExtra("sede");
+
         //txt
         txtTurno1 = findViewById(R.id.txtTurno1);
         txtTurno2 = findViewById(R.id.txtTurno2);
@@ -62,7 +65,12 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT1.setTextColor(getResources().getColor(R.color.white));
                 txtTurno1.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", Sistema.turno_id_1);
+                i.putExtra("turno_numero", Sistema.turno_numero_1);
+                i.putExtra("turno_horario", Sistema.turno_horario_1);
+                startActivity(i);
             }
         });
 
@@ -78,7 +86,12 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT2.setTextColor(getResources().getColor(R.color.white));
                 txtTurno2.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", Sistema.turno_id_2);
+                i.putExtra("turno_numero", Sistema.turno_numero_2);
+                i.putExtra("turno_horario", Sistema.turno_horario_2);
+                startActivity(i);
             }
         });
 
@@ -95,7 +108,12 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT3.setTextColor(getResources().getColor(R.color.white));
                 txtTurno3.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", Sistema.turno_id_3);
+                i.putExtra("turno_numero", Sistema.turno_numero_3);
+                i.putExtra("turno_horario", Sistema.turno_horario_3);
+                startActivity(i);
             }
         });
 
@@ -111,7 +129,12 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT4.setTextColor(getResources().getColor(R.color.white));
                 txtTurno4.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", Sistema.turno_id_4);
+                i.putExtra("turno_numero", Sistema.turno_numero_4);
+                i.putExtra("turno_horario", Sistema.turno_horario_4);
+                startActivity(i);
             }
         });
 
@@ -127,7 +150,12 @@ public class ReservaEscogerTurno extends AppCompatActivity {
                 txtTicketsDisponiblesT5.setTextColor(getResources().getColor(R.color.white));
                 txtTurno5.setTextColor(getResources().getColor(R.color.white));
                 //abriendo activity Resumen de Reserva
-                startActivity(new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class));
+                Intent i = new Intent(ReservaEscogerTurno.this, ReservaEscogerPlato.class);
+                i.putExtra("sede", sede);
+                i.putExtra("turno_id", Sistema.turno_id_5);
+                i.putExtra("turno_numero", Sistema.turno_numero_5);
+                i.putExtra("turno_horario", Sistema.turno_horario_5);
+                startActivity(i);
             }
         });
 
