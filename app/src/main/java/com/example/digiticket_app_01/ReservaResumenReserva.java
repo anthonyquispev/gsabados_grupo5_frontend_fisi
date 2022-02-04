@@ -19,6 +19,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,6 +27,7 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 
 public class ReservaResumenReserva extends AppCompatActivity {
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     // Variables para mostrar en el resumen
     private TextView tv_nombreCompleto;
@@ -44,6 +46,7 @@ public class ReservaResumenReserva extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva_resumen_reserva);
         queue = Volley.newRequestQueue(ReservaResumenReserva.this);
@@ -121,6 +124,9 @@ public class ReservaResumenReserva extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Toast.makeText(ReservaResumenReserva.this, response, Toast.LENGTH_SHORT).show();
+                        Bundle bundle = new Bundle();
+                        bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                        mFirebaseAnalytics.logEvent("RESERVA_EXITOSA", bundle);
                         startActivity(new Intent(ReservaResumenReserva.this, PantallaInicio.class));
                     }
                 },

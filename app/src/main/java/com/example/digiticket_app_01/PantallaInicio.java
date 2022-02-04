@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class PantallaInicio extends AppCompatActivity {
@@ -40,9 +41,9 @@ public class PantallaInicio extends AppCompatActivity {
             public void onClick(View view) {
                 //Probando envío de eventos
                 Bundle bundle = new Bundle();
-                bundle.putString("TEST_MODULE_NAME", "Informacion nutricional");
-                bundle.putString("TEST_ITEM_ID", "001002");
-                mFirebaseAnalytics.logEvent("TEST_MODULE_SELECTION", bundle);
+                bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                bundle.putString("CODIGO_ALUMNO", "186666666");
+                mFirebaseAnalytics.logEvent("ABRIR_INFO_NUTRICIONAL_ENTRADA", bundle);
                 //abriendo modal de Inf. nutricional
                 startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
             }
@@ -54,6 +55,9 @@ public class PantallaInicio extends AppCompatActivity {
         btnVerDetalle2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                mFirebaseAnalytics.logEvent("ABRIR_INFO_NUTRICIONAL_SEGUNDO", bundle);
                 //abriendo modal de Inf. nutricional
                 startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
             }
@@ -65,6 +69,9 @@ public class PantallaInicio extends AppCompatActivity {
         btnVerDetalle3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                mFirebaseAnalytics.logEvent("ABRIR_INFO_NUTRICIONAL_POSTRE", bundle);
                 //abriendo modal de Inf. nutricional
                 startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
             }
@@ -76,6 +83,9 @@ public class PantallaInicio extends AppCompatActivity {
         btnVerDetalle4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                mFirebaseAnalytics.logEvent("ABRIR_INFO_NUTRICIONAL_BEBIDA", bundle);
                 //abriendo modal de Inf. nutricional
                 startActivity(new Intent(PantallaInicio.this, PantallaInicioModalInfoNutricional.class));
             }
@@ -87,6 +97,10 @@ public class PantallaInicio extends AppCompatActivity {
         btnReservar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                mFirebaseAnalytics.logEvent("CLICK_OPCION_RESERVAR", bundle);
+
                 //navegando a Reservar Ticket
                 startActivity(new Intent(PantallaInicio.this, ReservaEscogerSede.class));
             }
@@ -98,6 +112,9 @@ public class PantallaInicio extends AppCompatActivity {
         btnVerTicket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                mFirebaseAnalytics.logEvent("CLICK_OPCION_VER_TICKET", bundle);
                 //navegando a Ver Ticket
                 startActivity(new Intent(PantallaInicio.this, ReservaMostrarTicket.class));
             }
@@ -109,6 +126,9 @@ public class PantallaInicio extends AppCompatActivity {
         btnMiPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                mFirebaseAnalytics.logEvent("CLICK_OPCION_MI_PERFIL", bundle);
                 //navegando a Mi Perfil
                 startActivity(new Intent(PantallaInicio.this, MiPerfilPrincipal.class));
             }
