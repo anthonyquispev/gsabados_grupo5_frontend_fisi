@@ -81,6 +81,7 @@ public class ReservaResumenReserva extends AppCompatActivity {
         tv_sede.setText(sede);
         tv_turno_horario.setText(turno_numero + " / " + turno_horario);
 
+        Sistema.turno_horario_ticket = (turno_numero + " / " + turno_horario);
 
         JSONObject jsonObjectcomidas = new JSONObject();
         try {
@@ -138,6 +139,11 @@ public class ReservaResumenReserva extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Toast.makeText(ReservaResumenReserva.this, response, Toast.LENGTH_SHORT).show();
+                        Sistema.user_id_ticket = user_id;
+                        Sistema.sede_ticket = sede;
+
+
+                        //Mandamos la Etiqueta de Google Analytics
                         Bundle bundle = new Bundle();
                         bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
                         mFirebaseAnalytics.logEvent("RESERVA_EXITOSA", bundle);

@@ -49,5 +49,10 @@ public class Sistema {
     // Refresco
     public static String comida_id_4 = "61f0fb62840ead7e039484c4";
 
+    //Para Petición Temporal de Ticket Reservado
+
+    public static String user_id_ticket = "";
+    public static String sede_ticket = "";
+    public static String turno_horario_ticket = "";
 
 }
