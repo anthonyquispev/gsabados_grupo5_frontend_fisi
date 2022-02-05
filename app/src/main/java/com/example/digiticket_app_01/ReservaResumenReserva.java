@@ -141,7 +141,7 @@ public class ReservaResumenReserva extends AppCompatActivity {
                         Toast.makeText(ReservaResumenReserva.this, response, Toast.LENGTH_SHORT).show();
                         Sistema.user_id_ticket = user_id;
                         Sistema.sede_ticket = sede;
-
+                        Sistema.flag_reserva_enable = false;
 
                         //Mandamos la Etiqueta de Google Analytics
                         Bundle bundle = new Bundle();

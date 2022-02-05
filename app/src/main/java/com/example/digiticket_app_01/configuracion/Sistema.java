@@ -54,5 +54,6 @@ public class Sistema {
     public static String user_id_ticket = "";
     public static String sede_ticket = "";
     public static String turno_horario_ticket = "";
+    public static Boolean flag_reserva_enable = true;
 
 }

@@ -115,8 +115,12 @@ public class PantallaInicio extends AppCompatActivity {
                 bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
                 mFirebaseAnalytics.logEvent("CLICK_OPCION_RESERVAR", bundle);
 
-                //navegando a Reservar Ticket
-                startActivity(new Intent(PantallaInicio.this, ReservaEscogerSede.class));
+                if (Sistema.flag_reserva_enable){
+                    //navegando a Reservar Ticket
+                    startActivity(new Intent(PantallaInicio.this, ReservaEscogerSede.class));
+                }else{
+                    Toast.makeText(PantallaInicio.this, "Usted ya tiene una reserva activa", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
