@@ -15,12 +15,14 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -43,6 +45,13 @@ public class ReservaResumenReserva extends AppCompatActivity {
     private FloatingActionButton btnRetroceder;
 
     RequestQueue queue;
+
+
+    private String cantidad_raciones;
+    private String cantidad_comida_principal;
+    private String cantidad_entrada;
+    private String cantidad_bebida;
+    private String cantidad_postre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +108,12 @@ public class ReservaResumenReserva extends AppCompatActivity {
             public void onClick(View view) {
                 //iniciando el modal
 //                startActivity(new Intent(ReservaResumenReserva.this, ReservaModalConfirmacion.class));
+                // Registrar Reserva
                 registrarReserva(user_id, Sistema.servicio_id, sede, nivel, turno_id, jsonObjectcomidas);
+                // Actualizar cantida de tickets
+                actualizarCantidadTickets(turno_id, jsonObjectcomidas);
+                // Ir hacia la pantalla de inicio
+                startActivity(new Intent(ReservaResumenReserva.this, PantallaInicio.class));
             }
         });
 
@@ -150,6 +164,49 @@ public class ReservaResumenReserva extends AppCompatActivity {
                     jsonBody.put("sede", sede);
                     jsonBody.put("nivel", nivel);
                     jsonBody.put("turno_id", turno_id);
+                    jsonBody.put("comidas", jsonObjectcomidas);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                final String requestBody = jsonBody.toString();
+                try {
+                    return requestBody == null ? null : requestBody.getBytes("utf-8");
+                } catch (UnsupportedEncodingException uee) {
+                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+                    return null;
+                }
+            }
+        };
+        queue.add(request);
+    }
+
+    private void actualizarCantidadTickets(String turno_id, JSONObject jsonObjectcomidas) {
+        String urlTurnos = "https://micro-reservas.herokuapp.com/api/turnos/r/" + turno_id;
+        StringRequest request = new StringRequest(Request.Method.PUT, urlTurnos,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Respuesta de la petición
+                        if (response.equals("\"Raciones reducida\"")) {
+                            Toast.makeText(ReservaResumenReserva.this, "Cantidad de tickets actualizado", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                    }
+                }
+        ) {
+            @Override
+            public String getBodyContentType() {
+                return "application/json; charset=utf-8";
+            }
+
+            @Override
+            public byte[] getBody() throws AuthFailureError {
+                JSONObject jsonBody = new JSONObject();
+                try {
                     jsonBody.put("comidas", jsonObjectcomidas);
                 } catch (JSONException e) {
                     e.printStackTrace();
