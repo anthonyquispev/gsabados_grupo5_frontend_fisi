@@ -21,6 +21,7 @@ import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.digiticket_app_01.configuracion.Sistema;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,6 +29,7 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 
 public class LoginActivado extends AppCompatActivity {
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     private Button btnIngresar;
     private TextView btnRecuperarContrasena;
@@ -39,6 +41,7 @@ public class LoginActivado extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_activado);
         queue = Volley.newRequestQueue(LoginActivado.this);
@@ -86,6 +89,9 @@ public class LoginActivado extends AppCompatActivity {
                         // PASSWORD CORRECTO
                         if (response.equals("\"Credenciales correctas\"")) {
                             Log.i("LOG","Prueba Log");
+                            Bundle bundle = new Bundle();
+                            bundle.putString("CODIGO_ALUMNO", Sistema.user_id.toString());
+                            mFirebaseAnalytics.logEvent("LOGIN_EXITOSO", bundle);
                             startActivity(new Intent(LoginActivado.this, PantallaInicio.class));
                         }
                         // PASSWORD INCORRECTO

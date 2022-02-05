@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PROYECTO-MOVIL/gsabados_grupo5_frontend_fisi/app/src/main/res/layout/activity_pantalla_inicio.xml" value="0.19021739130434784" />
+        <entry key="..\:/PROYECTO-MOVIL/gsabados_grupo5_frontend_fisi/app/src/main/res/layout/activity_reserva_escoger_sede.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/drawable/btn_aceptar_sede.xml" value="0.2203125" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/drawable/btn_aceptar_turno.xml" value="0.2203125" />
         <entry key="..\:/Users/Diego/Desktop/ProyectoDSM/RamaDiego/AvanceFE/DIGITICKET_APP_01-master/app/src/main/res/drawable/btn_azul_resumen_reserva.xml" value="0.2203125" />
