@@ -8,9 +8,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class ReservaEscogerTurno extends AppCompatActivity {
     private ConstraintLayout lyTurno1;
@@ -34,10 +45,12 @@ public class ReservaEscogerTurno extends AppCompatActivity {
     private TextView txtTurno5;
     private TextView txtTicketsDisponiblesT5;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserva_escoger_turno);
+
 
         String sede = getIntent().getStringExtra("sede");
 
@@ -52,6 +65,15 @@ public class ReservaEscogerTurno extends AppCompatActivity {
         txtTicketsDisponiblesT3 = findViewById(R.id.txtTicketsDisponiblesT3);
         txtTicketsDisponiblesT4 = findViewById(R.id.txtTicketsDisponiblesT4);
         txtTicketsDisponiblesT5 = findViewById(R.id.txtTicketsDisponiblesT5);
+
+        txtTicketsDisponiblesT1.setText(Sistema.cantidad_ticket1);
+        txtTicketsDisponiblesT2.setText(Sistema.cantidad_ticket2);
+        txtTicketsDisponiblesT3.setText(Sistema.cantidad_ticket3);
+        txtTicketsDisponiblesT4.setText(Sistema.cantidad_ticket4);
+        txtTicketsDisponiblesT5.setText(Sistema.cantidad_ticket5);
+
+
+
 
         //linkeando el layout (boton) con activity Resumen de Reserva
         lyTurno1 = findViewById(R.id.btnEscogerSedeCangallo);
@@ -170,4 +192,6 @@ public class ReservaEscogerTurno extends AppCompatActivity {
             }
         });
     }
+
+
 }

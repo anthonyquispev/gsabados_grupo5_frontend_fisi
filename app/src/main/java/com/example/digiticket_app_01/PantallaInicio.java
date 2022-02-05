@@ -5,10 +5,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.digiticket_app_01.configuracion.Sistema;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class PantallaInicio extends AppCompatActivity {
 
@@ -25,13 +37,16 @@ public class PantallaInicio extends AppCompatActivity {
     private ImageView btnVerDetalle2;
     private ImageView btnVerDetalle3;
     private ImageView btnVerDetalle4;
+    RequestQueue queue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla_inicio);
+        queue = Volley.newRequestQueue(PantallaInicio.this);
 
+        setContentView(R.layout.activity_pantalla_inicio);
+        pintarCantidadTickets();
         //Ver informacion nutricional 1
         btnVerDetalle1 = findViewById(R.id.btnVerDetallesHome1);
         //creando listener
@@ -114,4 +129,37 @@ public class PantallaInicio extends AppCompatActivity {
             }
         });
     }
+
+    private void pintarCantidadTickets() {
+        String url = "https://micro-reservas.herokuapp.com/api/turnos";
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        try {
+                            JSONObject jsonObject1 = new JSONObject(response.get(0).toString());
+                            Sistema.cantidad_ticket1 = jsonObject1.getString("cantidad_raciones");
+                            JSONObject jsonObject2 = new JSONObject(response.get(1).toString());
+                            Sistema.cantidad_ticket2 = jsonObject2.getString("cantidad_raciones");
+                            JSONObject jsonObject3 = new JSONObject(response.get(2).toString());
+                            Sistema.cantidad_ticket3 = jsonObject3.getString("cantidad_raciones");
+                            JSONObject jsonObject4 = new JSONObject(response.get(3).toString());
+                            Sistema.cantidad_ticket4 = jsonObject4.getString("cantidad_raciones");
+                            JSONObject jsonObject5 = new JSONObject(response.get(4).toString());
+                            Sistema.cantidad_ticket5 = jsonObject5.getString("cantidad_raciones");
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                    }
+                }
+        );
+        queue.add(jsonArrayRequest);
+    }
+
 }
